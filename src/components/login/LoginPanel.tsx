@@ -126,7 +126,7 @@ export default function LoginPanel({ onLogin }: { onLogin: () => void }) {
         {/* Título y subtítulo */}
         <div class="mb-8">
           <h1 class="text-3xl font-mono font-bold text-[var(--red-accent)] mb-2 flex items-center">
-            <span class="text-[var(--red-soft)] mr-2">&gt;</span>PORTFOLIO DE DCH4CON
+            <span class="text-[var(--red-soft)] mr-2">&gt;</span>PORTFOLIO DE ROBERT
           </h1>
 
           <p class="text-[var(--gray-terminal)] font-mono text-sm">

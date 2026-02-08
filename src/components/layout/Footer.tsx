@@ -40,7 +40,7 @@ export default function Footer() {
          * Esto refuerza la identidad del portfolio y da contexto al visitante.
          */}
         <div>
-          © 2026 Darío Chacón Parrón | Analista de Ciberseguridad | Pentester
+          © 2026 Robert Bou Poveda | Analista de Ciberseguridad | Pentester
         </div>
 
         {/**

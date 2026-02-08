@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
 </p>
 
-# 📁 **Portfolio Terminal — DCH4CON**
+# 📁 **Portfolio Terminal — DONTREBOR1**
 
 Un portfolio interactivo inspirado en una terminal Linux, diseñado para ofrecer una experiencia inmersiva, elegante y profesional. Construido con **Preact + TypeScript + TailwindCSS + Vite**, y con una estética inspirada en entornos **Red Team / Kali Linux**.
 
@@ -90,6 +90,6 @@ src/
 
 ## 👤 **Autor**
 
-**Darío Chacón Parrón** 
+**Robert Bou Poveda** 
 Analista de Ciberseguridad · Pentester
 [LinkedIn](https://www.linkedin.com/in/dariochaconp/) | [GitHub](https://github.com/DCh4con) | dchacon01@proton.me

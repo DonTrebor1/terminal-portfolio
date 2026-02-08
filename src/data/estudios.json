@@ -2,94 +2,133 @@
   "title": "<span style=\"color:#fffd00\">Formación Académica</span>",
   "items": [
     {
-      "id": "<span style=\"color:#3399ff\">[01]",
-      "titulo": "Máster en Ciberseguridad</span>",
+      "id": "<span style=\"color:#3399ff\">[01]</span>",
+      "titulo": "Máster de Ciberseguridad & IA",
       "inicio": "2025",
       "fin": "Actualidad",
-      "centro": "ZERO DAY - EDIBS",
+      "centro": "Evolve Academy",
       "ubicacion": "Remoto",
       "temas": [
-        { "icon": "[!]", "color": "red", "text": "En Formación" }
-      ]
-    },
-
-    {
-      "id": "<span style=\"color:#3399ff\">[02]",
-      "titulo": "Ciberseguridad en Entornos de las Tecnologías de la Información</span>",
-      "inicio": "2024",
-      "fin": "2025",
-      "centro": "IES Leonardo Da Vinci",
-      "ubicacion": "Albacete, Castilla-La Mancha, España",
-      "temas": [
+        { "icon": "[!]", "color": "red", "text": "En formación (matriculado desde Oct 2025)" },
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Hacking Ético\n\t\t- Evaluación de vulnerabilidades en sistemas (pentesting)\n\t\t- Uso de herramientas como Metasploit, Burp Suite y Nmap"
+          "text": "Seguridad ofensiva\n\t\t- Metodologías de pentesting\n\t\t- Reconocimiento, enumeración y explotación\n\t\t- Herramientas: Nmap, Burp Suite, Metasploit"
         },
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Análisis Forense Digital\n\t\t- Recuperación de evidencias\n\t\t- Uso de herramientas forenses (Autopsy, Volatility, Wireshark)"
+          "text": "Análisis y respuesta a incidentes\n\t\t- Detección y contención de amenazas\n\t\t- Análisis de tráfico y evidencias\n\t\t- Herramientas: Wireshark, Autopsy, Volatility"
         },
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Respuesta a Incidentes\n\t\t- Protocolos de actuación ante brechas de seguridad, contención y erradicación de amenazas"
+          "text": "Seguridad en sistemas Windows y Linux\n\t\t- Hardening de sistemas\n\t\t- Gestión de permisos y servicios\n\t\t- Monitorización básica"
         },
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Bastionado de Redes y Sistemas\n\t\t- Hardening de sistemas (Windows/Linux)\n\t\t- Configuración de firewalls y segmentación de redes"
+          "text": "Automatización aplicada a seguridad\n\t\t- Scripting para tareas repetitivas\n\t\t- Enfoque práctico en laboratorio"
         },
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Cloud mediante AWS Academy\n\t\t- Crear instancias (EC2)\n\t\t- Políticas de seguridad\n\t\t- Redes virtuales (VPC)\n\t\t- Gestión de buckets (S3)\n\t\t- Gestión de bases de datos (RDS)\n\t\t- Gestión de claves (KMS)"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Puesta en Producción Segura\n\t\t- Implementación de entornos seguros (EDR/XDR) Kaspersky y Sophos\n\t\t- Escaneo de vulnerabilidades con OpenVas y Nessus Essentials"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Normativa de Ciberseguridad\n\t\t- Conocimiento de RGPD, LOPDGDD, ENS y estándares ISO 27001"
+          "text": "Inteligencia Artificial aplicada a ciberseguridad\n\t\t- Uso de IA como apoyo a detección y análisis\n\t\t- Comprensión de riesgos y limitaciones"
         }
       ]
     },
     {
-      "id": "<span style=\"color:#3399ff\">[03]",
-      "titulo": "Grado Superior Desarrollo de Aplicaciones Multiplataforma (DAM)</span>",
-      "inicio": "2021",
-      "fin": "2023",
-      "centro": "IES Virrey Morcillo",
-      "ubicacion": "Villarrobledo, Castilla-La Mancha, España",
+      "id": "<span style=\"color:#3399ff\">[02]</span>",
+      "titulo": "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
+      "inicio": "2023",
+      "fin": "2025",
+      "centro": "Universae",
+      "ubicacion": "España (Remoto)",
       "temas": [
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Programación orientada a objetos (POO) en Java"
+          "text": "Desarrollo backend y frontend\n\t\t- Arquitectura de aplicaciones\n\t\t- Integración de bases de datos\n\t\t- Buenas prácticas de desarrollo"
         },
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Aplicación de principios SOLID"
+          "text": "Programación\n\t\t- Lógica de aplicación\n\t\t- Mantenimiento y optimización de código"
         },
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Desarrollo de aplicaciones multiplataforma con C# (.NET) y MAUI/XAML"
+          "text": "Bases de datos\n\t\t- Modelado de datos\n\t\t- Consultas SQL\n\t\t- Gestión de información"
+        }
+      ]
+    },
+    {
+      "id": "<span style=\"color:#3399ff\">[03]</span>",
+      "titulo": "Certificación en Respuesta a Incidentes de Ciberseguridad",
+      "inicio": "2025",
+      "fin": "2025",
+      "centro": "Dabo Consulting SL",
+      "ubicacion": "España",
+      "temas": [
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Gestión de incidentes\n\t\t- Contención, erradicación y recuperación\n\t\t- Protocolos de actuación"
+        }
+      ]
+    },
+    {
+      "id": "<span style=\"color:#3399ff\">[04]</span>",
+      "titulo": "Cisco Networking Academy",
+      "inicio": "2025",
+      "fin": "2025",
+      "centro": "Cisco",
+      "ubicacion": "Online",
+      "temas": [
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Introducción a la ciberseguridad\n\t\t- Principales amenazas\n\t\t- Fundamentos de protección"
         },
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Gestión de bases de datos:\n\t\t- Consultas SQL\n\t\t- Conexión a BBDD mediante JDBC y JPA (Hibernate)"
+          "text": "Networking con Packet Tracer\n\t\t- Simulación de redes\n\t\t- Configuración básica"
+        }
+      ]
+    },
+    {
+      "id": "<span style=\"color:#3399ff\">[05]</span>",
+      "titulo": "ACTIC Medio (Nivel 2)",
+      "inicio": "2024",
+      "fin": "2024",
+      "centro": "Generalitat de Catalunya",
+      "ubicacion": "Catalunya, España",
+      "temas": [
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Competencias digitales\n\t\t- Productividad\n\t\t- Comunicación digital\n\t\t- Entorno tecnológico profesional"
+        }
+      ]
+    },
+    {
+      "id": "<span style=\"color:#3399ff\">[06]</span>",
+      "titulo": "Ciberseguridad autodidacta (laboratorios prácticos)",
+      "inicio": "2024",
+      "fin": "Actualidad",
+      "centro": "Hack The Box · PortSwigger",
+      "ubicacion": "Online",
+      "temas": [
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Pentesting web\n\t\t- OWASP Top 10\n\t\t- Identificación de vulnerabilidades"
         },
         {
           "icon": "[+]",
           "color": "green",
-          "text": "Desarrollo móvil Android con Java (Activities, Fragments)"
+          "text": "Aprendizaje basado en laboratorio\n\t\t- Resolución práctica de escenarios\n\t\t- Mentalidad ofensiva y analítica"
         }
       ]
     }

@@ -44,7 +44,7 @@ export default function PageHeader({
          */}
         <div class="flex-shrink-0">
           <div class="text-[var(--red-accent)] font-mono font-bold text-lg">
-            <span class="text-[var(--red-soft)] mr-2">&gt;</span>DCH4CON
+            <span class="text-[var(--red-soft)] mr-2">&gt;</span>DONTREBOR1
           </div>
         </div>
 

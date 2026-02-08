@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import preact from "@preact/preset-vite";
 
 export default defineConfig({
-  base: "/portfolio-terminal/",
+  base: "/terminal-portfolio/",
   plugins: [preact()],
   server: { host: true, port: 3000 },
 });

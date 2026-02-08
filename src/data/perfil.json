@@ -1,16 +1,17 @@
 {
   "title": "<span style=\"color:#fffd00\">Perfil Profesional</span>",
-  "description": "<span style=\"color:#e60026\">Analista de ciberseguridad | Pentester</span> en formación con base sólida en desarrollo de software. Mi experiencia construyendo aplicaciones Java me da una perspectiva única: identifico vulnerabilidades que solo alguien que ha escrito código de producción puede detectar.\nEspecializado en pentesting básico, análisis y explotación de vulnerabilidades. Aplico mentalidad <span style=\"color:#e60026\">Red Team</span> a cada desafío técnico.",
+  "description": "<span style=\"color:#e60026\">Analista de Ciberseguridad en formación</span> con base técnica en sistemas, redes y desarrollo. Orientado al aprendizaje práctico en laboratorios, análisis de vulnerabilidades y mejora continua, con especial interés en <span style=\"color:#fffd00\">Red Team</span> y defensa de infraestructuras.",
   "specialization": [
-    { "icon": "[+]", "color": "green", "text": "Reconocimiento de Redes" },
-    { "icon": "[+]", "color": "green", "text": "Evaluación de Vulnerabilidades" },
-    { "icon": "[+]", "color": "green", "text": "Explotación de Vulnerabilidades" },
-    { "icon": "[+]", "color": "green", "text": "Automatización y Scripting" },
-    { "icon": "[+]", "color": "green", "text": "Programación" }
+    { "icon": "[+]", "color": "green", "text": "Fundamentos de Redes" },
+    { "icon": "[+]", "color": "green", "text": "Análisis de Vulnerabilidades" },
+    { "icon": "[+]", "color": "green", "text": "Laboratorios de Pentesting" },
+    { "icon": "[+]", "color": "green", "text": "Scripting básico y automatización" },
+    { "icon": "[+]", "color": "green", "text": "Bases de Programación" }
   ],
   "goals": [
-    { "icon": "[→]", "color": "orange", "text": "Consolidarme como Pentester" },
-    { "icon": "[→]", "color": "orange", "text": "Seguir formándome en Red Team" },
-    { "icon": "[→]", "color": "orange", "text": "Aportar valor real en equipos de seguridad" }
+    { "icon": "[→]", "color": "orange", "text": "Continuar  mi carrera profesional en ciberseguridad" },
+    { "icon": "[→]", "color": "orange", "text": "Especializarme en Pentesting y seguridad ofensiva" },
+    { "icon": "[→]", "color": "orange", "text": "Seguir aprendiendo y evolucionando constantemente" }
   ]
 }
+
