@@ -1,0 +1,65 @@
+{
+  "title": "<span style=\"color:#fffd00\">Certificaciones</span>",
+  "obtenidas": [
+    {
+      "icon": "[+]",
+      "color": "green",
+      "nombre": "eJPTv2 — INE Security",
+      "anio": "2025",
+      "id": "0x0c6958f928ee49c2d5765f48e3181ecb760a75e28f32c4b85de013c3eb88f24e",
+      "url": "https://certs.ine.com/dac41ed5-2233-408c-91f1-6b4724547cf8#acc.0ISQdhsz",
+      "detalles": [
+        "Certificación práctica orientada a pentesting básico",
+        "Enumeración, explotación básica y análisis de redes"
+      ]
+    },
+    {
+      "icon": "[+]",
+      "color": "green",
+      "nombre": "ICCA - INE",
+      "anio": "2025",
+      "id": "0xe8f570cbc7f0fe8e6736e322f839d8652d0dbe74f8884d81bc6faaae6eb55768",
+      "url": "https://certs.ine.com/63704c65-4ade-40e7-bc77-2574dbaf222a#acc.Yak0nP18",
+      "detalles": [
+        "Fundamentos básicos de Cloud"
+      ]
+    },
+    {
+      "icon": "[+]",
+      "color": "green",
+      "nombre": "Analista de Ciberseguridad Junior - CISCO",
+      "anio": "2025",
+      "id": "",
+      "url": "https://www.credly.com/badges/bd9a1941-67d3-45fd-9b78-73538ab75161/linked_in_profile",
+      "detalles": [
+        "Ruta para juniors en la carrera de Analista de Ciberseguridad"
+      ]
+    },
+    {
+      "icon": "[+]",
+      "color": "green",
+      "nombre": "Hacker Ético - CISCO",
+      "anio": "2025",
+      "id": "",
+      "url": "https://www.credly.com/badges/a1c282fe-57f1-40b3-aa95-2ecf92d6407a/linked_in_profile",
+      "detalles": [
+        "Definición de alcance, ejecución y reporte de evaluaciones de vulnerabilidades, y recomendación de estrategias para mitigación."
+      ]
+    }
+  ],
+  "enPreparacion": [
+    
+  ],
+  "objetivos": [
+    {
+      "icon": "[↑]",
+      "color": "red",
+      "nombre": "eWPT - INE Security"
+    },
+    {
+      "icon": "[↑]",
+      "color": "red",
+      "nombre": "CJCA - Hack The Box"
+    }
+  ]
+}

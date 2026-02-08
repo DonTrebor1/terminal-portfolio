@@ -1,0 +1,113 @@
+/**
+ * Variables globales de color.
+ *
+ * Estas variables definen la paleta principal del portfolio.
+ * Se usan en todo el proyecto para mantener coherencia visual
+ * y facilitar cambios de tema en el futuro.
+ *
+ * Decisiones de diseño:
+ *  - Colores inspirados en estética Red Team / terminal hacker
+ *  - Tonos suaves para evitar saturación visual
+ *  - Nombres semánticos para facilitar mantenimiento
+ */
+:root {
+  --red-accent: #e60026; /* Rojo elegante, profesional */
+  --red-soft: #ff0033; /* Rojo suave para detalles */
+  --black-carbon: #0d0d0d; /* Negro carbón */
+  --gray-terminal: #cfcfcf; /* Gris terminal */
+  --white-soft: #f2f2f2; /* Blanco suave */
+}
+
+/**
+ * Fondo degradado para paneles importantes (ej: LoginPanel).
+ *
+ * Razón:
+ *  - Añade profundidad visual sin distraer
+ *  - Mantiene estética oscura y elegante
+ */
+.panel-bg {
+  background: linear-gradient(to bottom, #0d0d0d, #000000);
+}
+
+/**
+ * Efecto glow rojo para elementos interactivos.
+ *
+ * Se usa en botones clave para reforzar la estética Red Team.
+ * El glow es suave para evitar ruido visual.
+ */
+.glow-red:hover {
+  box-shadow: 0 0 12px rgba(230, 0, 38, 0.45);
+}
+
+/**
+ * Borde superior rojo para paneles estilo terminal.
+ *
+ * Se usa en LoginPanel y otros contenedores importantes.
+ * Refuerza la identidad visual del portfolio.
+ */
+.border-top-red {
+  border-top: 2px solid var(--red-accent);
+}
+
+/**
+ * Estilo base para botones del menú superior.
+ *
+ * Se usa @apply para integrar Tailwind con variables CSS.
+ * Esto permite mantener consistencia sin repetir clases.
+ */
+.nav-btn {
+  @apply text-[var(--red-soft)] hover:text-[var(--white-accent)] transition-colors duration-200;
+}
+
+/**
+ * Scrollbar personalizado estilo Red Team.
+ *
+ * Decisiones de diseño:
+ *  - Scroll rectangular (sin bordes redondeados) para estética CLI
+ *  - Colores rojo oscuro y rojo brillante para coherencia temática
+ *  - Track negro para integrarse con el fondo de la terminal
+ *
+ * Solo afecta a contenedores con clase .terminal-scroll.
+ */
+.terminal-scroll::-webkit-scrollbar {
+  width: 10px; /* ancho del scroll */
+}
+
+.terminal-scroll::-webkit-scrollbar-track {
+  background: #000; /* interior negro */
+  border: 1px solid #8b0000; /* borde rojo oscuro */
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb {
+  background: #8b0000; /* rojo oscuro */
+  border: 1px solid #ff0000; /* borde rojo brillante */
+  border-radius: 0; /* rectangular */
+}
+
+.terminal-scroll::-webkit-scrollbar-thumb:hover {
+  background: #ff0000; /* rojo más brillante al pasar el ratón */
+}
+
+/**
+ * Animación del cursor parpadeante estilo terminal.
+ *
+ * - steps(1) → parpadeo duro, no suave (como en terminal real)
+ * - 0.8s → velocidad equilibrada para lectura
+ *
+ * Se aplica mediante la clase .cursor-blink.
+ */
+@keyframes cursor-blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cursor-blink {
+  animation: cursor-blink 0.8s steps(1) infinite;
+}

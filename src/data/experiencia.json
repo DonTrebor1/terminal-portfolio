@@ -1,0 +1,79 @@
+{
+  "title": "<span style=\"color:#fffd00\">Experiencia Profesional</span>",
+  "items": [
+    {
+      "id": "<span style=\"color:#3399ff\">[01]",
+      "puesto": "Desarrollador de Software Java</span>",
+      "inicio": "2023",
+      "fin": "2025",
+      "empresa": "<span style=\"color:#ff3333\">ERINGENIERIA</span>",
+      "ubicacion": "Villarrobledo, Castilla-La Mancha, España",
+      "responsabilidades": [
+        {
+          "icon": "[→]",
+          "color": "orange",
+          "text": "Desarrollo full-stack según requisitos de clientes"
+        },
+        {
+          "icon": "[→]",
+          "color": "orange",
+          "text": "Administración remota de servidores y deployment de actualizaciones"
+        },
+        {
+          "icon": "[→]",
+          "color": "orange",
+          "text": "Soporte técnico directo con análisis de errores y troubleshooting"
+        }
+      ],
+      "logros": [
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Desarrollé desde cero API REST en Angular, sin conocimiento del framework, para integración con sistemas externos, mejorando la interoperabilidad entre plataformas"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Gestioné despliegues remotos en servidores de producción, experiencia que hoy aplico al análisis de infraestructuras desde perspectiva ofensiva"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Resolví bugs críticos mediante debugging avanzado y análisis de logs, habilidades transferibles al análisis de vulnerabilidades"
+        }
+      ],
+      "stackGroups": [
+        {
+          "icon": "[★]",
+          "color": "yellow",
+          "title": "Lenguajes",
+          "items": ["Java", "TypeScript", "SQL"]
+        },
+        {
+          "icon": "[★]",
+          "color": "yellow",
+          "title": "Frameworks/Librerías",
+          "items": ["Angular", "Node.js", "Express"]
+        },
+        {
+          "icon": "[★]",
+          "color": "yellow",
+          "title": "Control de versiones",
+          "items": ["Git"]
+        },
+        {
+          "icon": "[★]",
+          "color": "yellow",
+          "title": "Metodologías Agiles",
+          "items": ["Scrum"]
+        },
+        {
+          "icon": "[★]",
+          "color": "yellow",
+          "title": "Gestión de Proyectos",
+          "items": ["Jira", "Confluence"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "title": "<span style=\"color:#fffd00\">Habilidades</span>",
+  "categorias": [
+    {
+      "nombre": "• Ciberseguridad",
+      "items": [
+        { "icon": "[+]", "color": "red", "text": "Pentesting básico" },
+        { "icon": "[+]", "color": "red", "text": "Enumeración y reconocimiento" },
+        { "icon": "[+]", "color": "red", "text": "Explotación de vulnerabilidades" },
+        { "icon": "[+]", "color": "red", "text": "Detección de Amenazas" }
+      ]
+    },
+    {
+      "nombre": "• Programación",
+      "items": [
+        { "icon": "[+]", "color": "yellow", "text": "Lenguajes: Java, C#, Python, Bash, Typescript" },
+        { "icon": "[+]", "color": "yellow", "text": "Frameworks: Angular, Express" }
+      ]
+    },
+    {
+      "nombre": "• Herramientas",
+      "items": [
+        { "icon": "[+]", "color": "orange", "text": "Nmap, Burp Suite, Metasploit, Wireshark, Hydra" },
+        { "icon": "[+]", "color": "orange", "text": "Nessus, OpenVas" },
+        { "icon": "[+]", "color": "orange", "text": "Detección de Amenazas: Kaspersky(EDR), Sophos(XDR)" }
+      ]
+    },
+    {
+      "nombre": "• Habilidades Personales",
+      "items": [
+        { "icon": "[+]", "color": "blue", "text": "Aprendizaje Acelerado" },
+        { "icon": "[+]", "color": "blue", "text": "Trabajo bajo presión" },
+        { "icon": "[+]", "color": "blue", "text": "Buena Comunicación" },
+        { "icon": "[+]", "color": "blue", "text": "Trabajo en equipo" }
+      ]
+    }
+  ]
+}

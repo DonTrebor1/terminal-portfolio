@@ -1,0 +1,97 @@
+{
+  "title": "<span style=\"color:#fffd00\">Formación Académica</span>",
+  "items": [
+    {
+      "id": "<span style=\"color:#3399ff\">[01]",
+      "titulo": "Máster en Ciberseguridad</span>",
+      "inicio": "2025",
+      "fin": "Actualidad",
+      "centro": "ZERO DAY - EDIBS",
+      "ubicacion": "Remoto",
+      "temas": [
+        { "icon": "[!]", "color": "red", "text": "En Formación" }
+      ]
+    },
+
+    {
+      "id": "<span style=\"color:#3399ff\">[02]",
+      "titulo": "Ciberseguridad en Entornos de las Tecnologías de la Información</span>",
+      "inicio": "2024",
+      "fin": "2025",
+      "centro": "IES Leonardo Da Vinci",
+      "ubicacion": "Albacete, Castilla-La Mancha, España",
+      "temas": [
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Hacking Ético\n\t\t- Evaluación de vulnerabilidades en sistemas (pentesting)\n\t\t- Uso de herramientas como Metasploit, Burp Suite y Nmap"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Análisis Forense Digital\n\t\t- Recuperación de evidencias\n\t\t- Uso de herramientas forenses (Autopsy, Volatility, Wireshark)"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Respuesta a Incidentes\n\t\t- Protocolos de actuación ante brechas de seguridad, contención y erradicación de amenazas"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Bastionado de Redes y Sistemas\n\t\t- Hardening de sistemas (Windows/Linux)\n\t\t- Configuración de firewalls y segmentación de redes"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Cloud mediante AWS Academy\n\t\t- Crear instancias (EC2)\n\t\t- Políticas de seguridad\n\t\t- Redes virtuales (VPC)\n\t\t- Gestión de buckets (S3)\n\t\t- Gestión de bases de datos (RDS)\n\t\t- Gestión de claves (KMS)"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Puesta en Producción Segura\n\t\t- Implementación de entornos seguros (EDR/XDR) Kaspersky y Sophos\n\t\t- Escaneo de vulnerabilidades con OpenVas y Nessus Essentials"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Normativa de Ciberseguridad\n\t\t- Conocimiento de RGPD, LOPDGDD, ENS y estándares ISO 27001"
+        }
+      ]
+    },
+    {
+      "id": "<span style=\"color:#3399ff\">[03]",
+      "titulo": "Grado Superior Desarrollo de Aplicaciones Multiplataforma (DAM)</span>",
+      "inicio": "2021",
+      "fin": "2023",
+      "centro": "IES Virrey Morcillo",
+      "ubicacion": "Villarrobledo, Castilla-La Mancha, España",
+      "temas": [
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Programación orientada a objetos (POO) en Java"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Aplicación de principios SOLID"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Desarrollo de aplicaciones multiplataforma con C# (.NET) y MAUI/XAML"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Gestión de bases de datos:\n\t\t- Consultas SQL\n\t\t- Conexión a BBDD mediante JDBC y JPA (Hibernate)"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Desarrollo móvil Android con Java (Activities, Fragments)"
+        }
+      ]
+    }
+  ]
+}
