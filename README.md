@@ -15,7 +15,7 @@ Un portfolio interactivo inspirado en una terminal Linux, diseñado para ofrecer
 
 ## 🚀 **Demo**
 
-[Portfolio-Terminal]([https://dontrebor1.github.io/terminal-portfolio/]
+[https://dontrebor1.github.io/terminal-portfolio/]
 
 ## 🧩 **Características principales**
 
