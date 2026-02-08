@@ -262,13 +262,6 @@ ${safeList(data?.objetivos)
  *  - La terminal soporta HTML seguro
  *  - Esto permite abrir enlaces sin romper la estética CLI
  */
-function linkify(text: string): string {
-  const urlRegex = /(https?:\/\/[^\s]+)/g;
-  return text.replace(
-    urlRegex,
-    (url) => `<a href="${url}" target="_blank" style="color:#3399ff">${url}</a>`
-  );
-}
 
 
 /**
