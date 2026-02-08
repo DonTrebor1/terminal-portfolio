@@ -216,69 +216,42 @@ ${cat.items
  * - Mantiene indentación manual
  */
 export function formatCertificaciones(data: any): string {
-  // --- OBTENIDAS ---
-  const obtenidas = data.obtenidas?.length
-    ? data.obtenidas
-        .map(
-          (c: any) => `${colorIcon(c.icon, c.color)} ${c.nombre} (${c.anio})
-     - ID Credencial: ${c.id}
-     - URL: ${linkify(c.url)}
-${c.detalles.map((d: string) => `     - ${d}`).join("\n")}
-`
-        )
-        .join("\n")
-    : "";
+  const safeList = (v: any) => (Array.isArray(v) ? v : []);
+  const safeStr = (v: any) => (typeof v === "string" ? v : "");
 
-  // --- EN PREPARACIÓN ---
-  const enPrep = data.enPreparacion?.length
-    ? data.enPreparacion
-        .map(
-          (c: any) => `${colorIcon(c.icon, c.color)} ${c.nombre}
-     - Progreso: ${c.progreso}
-${c.detalles.map((d: string) => `     - ${d}`).join("\n")}
-`
-        )
-        .join("\n")
-    : "";
+  const renderCert = (c: any) => {
+    const nombre = safeStr(c?.nombre);
+    const anio = safeStr(c?.anio);
+    const id = safeStr(c?.id);
+    const url = safeStr(c?.url);
+    const detalles = safeList(c?.detalles);
 
-  // --- OBJETIVOS FUTUROS ---
-  const objetivos = data.objetivos?.length
-    ? data.objetivos
-        .map(
-          (c: any) => `${colorIcon(c.icon, c.color)} ${c.nombre}
-`
-        )
-        .join("\n")
-    : "";
+    return `     ${c?.icon ? colorIcon(c.icon, c.color) : "-"} ${nombre}${anio ? ` (${anio})` : ""}${
+      id ? `\n       ID: ${id}` : ""
+    }${url ? `
+       URL: <a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>` : ""}${
+      detalles.length
+        ? `\n${detalles.map((d: any) => `       - ${d}`).join("\n")}`
+        : ""
+    }`;
+  };
 
-  // --- CONSTRUCCIÓN FINAL DINÁMICA ---
-  let output = `
-=== ${data.title.toUpperCase()} ===
+  return `
+=== ${safeStr(data?.title).toUpperCase()} ===
+
+• OBTENIDAS:
+${safeList(data?.obtenidas).map(renderCert).join("\n\n") || "     -"}
+
+• EN CURSO:
+${safeList(data?.enPreparacion).map(renderCert).join("\n\n") || "     -"}
+
+• OBJETIVOS:
+${safeList(data?.objetivos)
+  .map((o: any) => `     ${o?.icon ? colorIcon(o.icon, o.color) : "-"} ${safeStr(o?.nombre)}`)
+  .join("\n") || "     -"}
 `;
-
-  if (obtenidas) {
-    output += `
-• Obtenidas:
-${obtenidas}
-`;
-  }
-
-  if (enPrep) {
-    output += `
-• En preparación:
-${enPrep}
-`;
-  }
-
-  if (objetivos) {
-    output += `
-• Objetivos futuros:
-${objetivos}
-`;
-  }
-
-  return output;
 }
+
 
 
 /**
@@ -306,31 +279,43 @@ function linkify(text: string): string {
  * - Mantiene estructura clara por secciones
  */
 export function formatContacto(data: any): string {
-  const contacto = data.items
-  .map((i: any) =>
-    `${i.icon ? colorIcon(i.icon, i.color) + " " : "- "}${i.label}: ${linkify(i.value)}`
-  )
-  .join("\n");
+  const safeList = (v: any) => (Array.isArray(v) ? v : []);
+  const safeStr = (v: any) => (typeof v === "string" ? v : "");
 
-  const disponibilidad = data.disponibilidad
-    .map((d: any) => `${colorIcon(d.icon, d.color)} ${d.text}`)
+  const linkify = (value: string) => {
+    const v = safeStr(value);
+    if (v.startsWith("http://") || v.startsWith("https://")) {
+      return `<a href="${v}" target="_blank" rel="noopener noreferrer">${v}</a>`;
+    }
+    return v;
+  };
+
+  const items = safeList(data?.items)
+    .map((i: any) => {
+      const icon = i?.icon ? colorIcon(i.icon, i.color) : "-";
+      const label = safeStr(i?.label);
+      const value = linkify(i?.value);
+      return `     ${icon} ${label}: ${value}`;
+    })
     .join("\n");
 
-  const idiomas = data.idiomas
-    .map((i: any) => `${colorIcon(i.icon, i.color)} ${i.text}`)
+  const disp = safeList(data?.disponibilidad)
+    .map((d: any) => {
+      const icon = d?.icon ? colorIcon(d.icon, d.color) : "-";
+      return `     ${icon} ${safeStr(d?.text)}`;
+    })
     .join("\n");
 
+  // idiomas ya NO se pintan aquí (los has movido a skills)
   return `
-=== ${data.title.toUpperCase()} ===
-${contacto}
+=== ${safeStr(data?.title).toUpperCase()} ===
 
-=== DISPONIBILIDAD ===
-${disponibilidad}
+${items || "     -"}
 
-=== IDIOMAS ===
-${idiomas}
+${disp ? "\n• DISPONIBILIDAD:\n" + disp : ""}
 `;
 }
+
 
 
 /**

@@ -1,65 +1,120 @@
 {
   "title": "<span style=\"color:#fffd00\">Certificaciones</span>",
   "obtenidas": [
+
     {
       "icon": "[+]",
       "color": "green",
-      "nombre": "eJPTv2 — INE Security",
-      "anio": "2025",
-      "id": "0x0c6958f928ee49c2d5765f48e3181ecb760a75e28f32c4b85de013c3eb88f24e",
-      "url": "https://certs.ine.com/dac41ed5-2233-408c-91f1-6b4724547cf8#acc.0ISQdhsz",
-      "detalles": [
-        "Certificación práctica orientada a pentesting básico",
-        "Enumeración, explotación básica y análisis de redes"
-      ]
-    },
-    {
-      "icon": "[+]",
-      "color": "green",
-      "nombre": "ICCA - INE",
-      "anio": "2025",
-      "id": "0xe8f570cbc7f0fe8e6736e322f839d8652d0dbe74f8884d81bc6faaae6eb55768",
-      "url": "https://certs.ine.com/63704c65-4ade-40e7-bc77-2574dbaf222a#acc.Yak0nP18",
-      "detalles": [
-        "Fundamentos básicos de Cloud"
-      ]
-    },
-    {
-      "icon": "[+]",
-      "color": "green",
-      "nombre": "Analista de Ciberseguridad Junior - CISCO",
+      "nombre": "Introduction to Cybersecurity — Cisco Networking Academy",
       "anio": "2025",
       "id": "",
-      "url": "https://www.credly.com/badges/bd9a1941-67d3-45fd-9b78-73538ab75161/linked_in_profile",
+      "url": "https://www.credly.com/badges/f8d714b9-d550-4f5f-9f88-68c09aacff80",
       "detalles": [
-        "Ruta para juniors en la carrera de Analista de Ciberseguridad"
+        "Fundamentos de ciberseguridad y defensa de sistemas",
+        "Detección de amenazas y vectores de ataque",
+        "Conceptos esenciales de protección de redes"
       ]
     },
+
     {
       "icon": "[+]",
       "color": "green",
-      "nombre": "Hacker Ético - CISCO",
+      "nombre": "Respuesta a Incidentes de Ciberseguridad — Dabo Consulting",
       "anio": "2025",
       "id": "",
-      "url": "https://www.credly.com/badges/a1c282fe-57f1-40b3-aa95-2ecf92d6407a/linked_in_profile",
+      "url": "",
       "detalles": [
-        "Definición de alcance, ejecución y reporte de evaluaciones de vulnerabilidades, y recomendación de estrategias para mitigación."
+        "Curso profesional subvencionado por el SEPE y fondos europeos",
+        "Detección y gestión de incidentes de seguridad",
+        "Análisis de logs e identificación de amenazas",
+        "Primeros pasos en informática forense",
+        "Evaluación de vulnerabilidades y análisis de malware"
+      ]
+    },
+
+    {
+      "icon": "[+]",
+      "color": "green",
+      "nombre": "Introduction to Packet Tracer — Cisco Networking Academy",
+      "anio": "2025",
+      "id": "",
+      "url": "https://www.credly.com/badges/18dcd459-0db4-4b2b-90f2-74a3905850ad",
+      "detalles": [
+        "Simulación de infraestructuras de red",
+        "Configuración básica de dispositivos",
+        "Comprensión del funcionamiento de redes"
+      ]
+    },
+
+    {
+      "icon": "[+]",
+      "color": "green",
+      "nombre": "ACTIC Nivel Medio (Nivel 2) — Generalitat de Catalunya",
+      "anio": "2024",
+      "id": "",
+      "url": "",
+      "detalles": [
+        "Acreditación oficial de competencias digitales",
+        "Productividad y entorno tecnológico profesional",
+        "Comunicación y gestión de información digital"
+      ]
+    },
+
+    {
+      "icon": "[+]",
+      "color": "green",
+      "nombre": "Google IA y Productividad — Santander Open Academy",
+      "anio": "2025",
+      "id": "OA-2025-0527001164894",
+      "url": "",
+      "detalles": [
+        "Aplicación de IA para mejorar productividad",
+        "Automatización de tareas mediante herramientas inteligentes"
+      ]
+    },
+
+    {
+      "icon": "[+]",
+      "color": "green",
+      "nombre": "Iniciación al Desarrollo con IA — BIG School",
+      "anio": "2025",
+      "id": "",
+      "url": "",
+      "detalles": [
+        "Fundamentos del desarrollo de software apoyado en IA",
+        "Uso de Firebase",
+        "Integración de servicios inteligentes en aplicaciones"
       ]
     }
+
   ],
-  "enPreparacion": [
-    
-  ],
+"enPreparacion": [
+  {
+    "icon": "[~]",
+    "color": "yellow",
+    "nombre": "eJPTv2 — Junior Penetration Tester (INE Security)",
+    "anio": "2026",
+    "id": "",
+    "url": "",
+    "detalles": [
+      "Certificación práctica altamente reconocida en ciberseguridad",
+      "Pentesting realista en entornos de laboratorio",
+      "Enumeración, explotación y post-explotación"
+    ]
+  }
+],
+
+
   "objetivos": [
     {
       "icon": "[↑]",
       "color": "red",
-      "nombre": "eWPT - INE Security"
+      "nombre": "eWPT — Web Application Penetration Tester"
     },
     {
       "icon": "[↑]",
       "color": "red",
-      "nombre": "CJCA - Hack The Box"
+      "nombre": "CRTP — Certified Red Team Professional"
     }
   ]
 }

@@ -63,56 +63,6 @@
       ]
     },
     {
-      "id": "<span style=\"color:#3399ff\">[03]</span>",
-      "titulo": "Certificación en Respuesta a Incidentes de Ciberseguridad",
-      "inicio": "2025",
-      "fin": "2025",
-      "centro": "Dabo Consulting SL",
-      "ubicacion": "España",
-      "temas": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Gestión de incidentes\n\t\t- Contención, erradicación y recuperación\n\t\t- Protocolos de actuación"
-        }
-      ]
-    },
-    {
-      "id": "<span style=\"color:#3399ff\">[04]</span>",
-      "titulo": "Cisco Networking Academy",
-      "inicio": "2025",
-      "fin": "2025",
-      "centro": "Cisco",
-      "ubicacion": "Online",
-      "temas": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Introducción a la ciberseguridad\n\t\t- Principales amenazas\n\t\t- Fundamentos de protección"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Networking con Packet Tracer\n\t\t- Simulación de redes\n\t\t- Configuración básica"
-        }
-      ]
-    },
-    {
-      "id": "<span style=\"color:#3399ff\">[05]</span>",
-      "titulo": "ACTIC Medio (Nivel 2)",
-      "inicio": "2024",
-      "fin": "2024",
-      "centro": "Generalitat de Catalunya",
-      "ubicacion": "Catalunya, España",
-      "temas": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Competencias digitales\n\t\t- Productividad\n\t\t- Comunicación digital\n\t\t- Entorno tecnológico profesional"
-        }
-      ]
-    },
-    {
       "id": "<span style=\"color:#3399ff\">[06]</span>",
       "titulo": "Ciberseguridad autodidacta (laboratorios prácticos)",
       "inicio": "2024",

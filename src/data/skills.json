@@ -1,37 +1,174 @@
 {
-  "title": "<span style=\"color:#fffd00\">Habilidades</span>",
+  "title": "<span style=\"color:#fffd00\">Habilidades Técnicas</span>",
   "categorias": [
     {
       "nombre": "• Ciberseguridad",
       "items": [
-        { "icon": "[+]", "color": "red", "text": "Pentesting básico" },
-        { "icon": "[+]", "color": "red", "text": "Enumeración y reconocimiento" },
-        { "icon": "[+]", "color": "red", "text": "Explotación de vulnerabilidades" },
-        { "icon": "[+]", "color": "red", "text": "Detección de Amenazas" }
+        {
+          "icon": "[+]",
+          "color": "red",
+          "text": "Reconocimiento y enumeración de redes y sistemas"
+        },
+        {
+          "icon": "[+]",
+          "color": "red",
+          "text": "Análisis de vulnerabilidades en entornos controlados"
+        },
+        {
+          "icon": "[+]",
+          "color": "red",
+          "text": "Pentesting web basado en OWASP Top 10"
+        },
+        {
+          "icon": "[+]",
+          "color": "red",
+          "text": "Experiencia práctica en laboratorios (Hack The Box, PortSwigger)"
+        },
+        {
+          "icon": "[+]",
+          "color": "red",
+          "text": "Comprensión de metodologías de testing ofensivo"
+        }
+      ]
+    },
+    {
+      "nombre": "• Herramientas de Seguridad",
+      "items": [
+        {
+          "icon": "[+]",
+          "color": "orange",
+          "text": "Burp Suite"
+        },
+        {
+          "icon": "[+]",
+          "color": "orange",
+          "text": "Nmap"
+        },
+        {
+          "icon": "[+]",
+          "color": "orange",
+          "text": "Wireshark"
+        },
+        {
+          "icon": "[+]",
+          "color": "orange",
+          "text": "Metasploit"
+        },
+        {
+          "icon": "[+]",
+          "color": "orange",
+          "text": "SQLMap"
+        },
+        {
+          "icon": "[+]",
+          "color": "orange",
+          "text": "John the Ripper"
+        },
+        {
+          "icon": "[+]",
+          "color": "orange",
+          "text": "Autopsy y Volatility (análisis forense básico)"
+        },
+        {
+          "icon": "[+]",
+          "color": "orange",
+          "text": "Active Directory (conceptos de seguridad)"
+        }
       ]
     },
     {
       "nombre": "• Programación",
       "items": [
-        { "icon": "[+]", "color": "yellow", "text": "Lenguajes: Java, C#, Python, Bash, Typescript" },
-        { "icon": "[+]", "color": "yellow", "text": "Frameworks: Angular, Express" }
+        {
+          "icon": "[+]",
+          "color": "yellow",
+          "text": "Java, C#, Python, Bash y JavaScript"
+        },
+        {
+          "icon": "[+]",
+          "color": "yellow",
+          "text": "Desarrollo web con PHP, HTML y CSS"
+        },
+        {
+          "icon": "[+]",
+          "color": "yellow",
+          "text": "Bases de datos SQL"
+        },
+        {
+          "icon": "[+]",
+          "color": "yellow",
+          "text": "Capacidad de analizar código desde una perspectiva de seguridad"
+        }
       ]
     },
     {
-      "nombre": "• Herramientas",
+      "nombre": "• Sistemas y Redes",
       "items": [
-        { "icon": "[+]", "color": "orange", "text": "Nmap, Burp Suite, Metasploit, Wireshark, Hydra" },
-        { "icon": "[+]", "color": "orange", "text": "Nessus, OpenVas" },
-        { "icon": "[+]", "color": "orange", "text": "Detección de Amenazas: Kaspersky(EDR), Sophos(XDR)" }
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Kali Linux, Windows y Linux"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Conceptos de redes y arquitectura de sistemas"
+        },
+        {
+          "icon": "[+]",
+          "color": "green",
+          "text": "Resolución estructurada de incidencias técnicas"
+        }
       ]
     },
     {
-      "nombre": "• Habilidades Personales",
+      "nombre": "• Competencias Profesionales",
       "items": [
-        { "icon": "[+]", "color": "blue", "text": "Aprendizaje Acelerado" },
-        { "icon": "[+]", "color": "blue", "text": "Trabajo bajo presión" },
-        { "icon": "[+]", "color": "blue", "text": "Buena Comunicación" },
-        { "icon": "[+]", "color": "blue", "text": "Trabajo en equipo" }
+        {
+          "icon": "[+]",
+          "color": "blue",
+          "text": "Pensamiento analítico y orientación a la resolución de problemas"
+        },
+        {
+          "icon": "[+]",
+          "color": "blue",
+          "text": "Gran capacidad de aprendizaje y adaptación tecnológica"
+        },
+        {
+          "icon": "[+]",
+          "color": "blue",
+          "text": "Experiencia en liderazgo y gestión de equipos"
+        },
+        {
+          "icon": "[+]",
+          "color": "blue",
+          "text": "Trabajo bajo presión"
+        },
+        {
+          "icon": "[+]",
+          "color": "blue",
+          "text": "Alta responsabilidad profesional"
+        }
+      ]
+    },
+    {
+      "nombre": "• Idiomas",
+      "items": [
+        {
+          "icon": "[+]",
+          "color": "blue",
+          "text": "Español — Nativo"
+        },
+        {
+          "icon": "[+]",
+          "color": "blue",
+          "text": "Catalán — Nativo"
+        },
+        {
+          "icon": "[+]",
+          "color": "blue",
+          "text": "Inglés — B2 (técnico)"
+        }
       ]
     }
   ]

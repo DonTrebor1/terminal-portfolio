@@ -1,17 +1,13 @@
 {
   "title": "<span style=\"color:#fffd00\">Contacto</span>",
   "items": [
-    { "icon": "[+]", "color": "green", "label": "Email", "value": "dchacon01@proton.me" },
-    { "icon": "[+]", "color": "green", "label": "LinkedIn", "value": "https://linkedin.com/in/dariochaconp" },
-    { "icon": "[+]", "color": "green", "label": "GitHub", "value": "https://github.com/DCh4con" },
-    { "icon": "[+]", "color": "green", "label": "Ubicación", "value": "Castilla-La Mancha, España" }
+    { "icon": "[+]", "color": "green", "label": "Email", "value": "robertbp90@gmail.com" },
+    { "icon": "[+]", "color": "green", "label": "LinkedIn", "value": "https://www.linkedin.com/in/robert-bou-poveda-919295248" },
+    { "icon": "[+]", "color": "green", "label": "GitHub", "value": "https://github.com/DonTrebor1" },
+    { "icon": "[+]", "color": "green", "label": "Ubicación", "value": "Barcelona, España" }
   ],
   "disponibilidad": [
     { "icon": "[+]", "color": "blue", "text": "Disponible para trabajo remoto y presencial" },
     { "icon": "[+]", "color": "blue", "text": "Zona horaria: CET (UTC+1)" }
-  ],
-  "idiomas": [
-    { "icon": "[+]", "color": "red", "text": "Español: Nativo" },
-    { "icon": "[+]", "color": "red", "text": "Inglés: No tengo problemas para la redacción y lectura de documentación en inglés" }
   ]
 }
