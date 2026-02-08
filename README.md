@@ -92,4 +92,4 @@ src/
 
 **Robert Bou Poveda** 
 Analista de Ciberseguridad · Pentester
-[LinkedIn](https://www.linkedin.com/in/dariochaconp/) | [GitHub](https://github.com/DCh4con) | dchacon01@proton.me
+[LinkedIn](https://www.linkedin.com/in/dariochaconp/) | [GitHub](https://github.com/DCh4con) | robertbp90@gmail.com
