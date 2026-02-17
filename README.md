@@ -9,45 +9,42 @@
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
 </p>
 
-🖥️ Terminal Portfolio — DONTREBOR1
+# 📁 **Portfolio Terminal — DONTREBOR1**
 
-Portfolio interactivo con estética de terminal Linux, diseñado para simular una experiencia real de consola orientada al mundo de la ciberseguridad ofensiva.
+Un portfolio interactivo inspirado en una terminal Linux, diseñado para ofrecer una experiencia inmersiva, elegante y profesional. Construido con **Preact + TypeScript + TailwindCSS + Vite**, y con una estética inspirada en entornos **Red Team / Kali Linux**.
 
-Construido con Preact + TypeScript + TailwindCSS + Vite, con una ambientación visual inspirada en entornos Red Team / Kali Linux.
+## 🚀 **Demo**
 
-🌐 Demo en vivo
+[https://dontrebor1.github.io/terminal-portfolio/]
 
-👉 https://dontrebor1.github.io/terminal-portfolio/
+## 🧩 **Características principales**
 
-✨ Funcionalidades destacadas
+- **Terminal interactiva real:** Comandos animados, historial, prompt dinámico y formateadores personalizados.
+    
+- **Login animado estilo hacker:** Escribe usuario y contraseña automáticamente antes de entrar al sistema.
+    
+- **Efecto Matrix en canvas:** Fondo animado optimizado para rendimiento.
+    
+- **Diseño responsive completo:** Adaptado a móvil, tablet y desktop con banners ASCII dinámicos.
+    
+- **Menú lateral mobile-first:** Navegación rápida mediante comandos predefinidos.
+    
+- **Código altamente documentado** Comentarios profesionales explicando intención, arquitectura y decisiones.
 
-🔹 Simulación de terminal real
-Sistema de comandos con historial, prompt dinámico, animaciones de escritura y renderizado personalizado de contenido.
+## 🛠️ **Tecnologías utilizadas**
 
-🔹 Acceso estilo hacker automatizado
-Pantalla de login animada que introduce usuario y contraseña automáticamente antes de iniciar la sesión.
+| Tecnología            | Uso                                      |
+| --------------------- | ---------------------------------------- |
+| **Preact**            | UI ligera y rápida                       |
+| **TypeScript**        | Tipado estático y robustez               |
+| **TailwindCSS**       | Estilos utilitarios y diseño consistente |
+| **Vite**              | Bundler ultrarrápido                     |
+| **Canvas API**        | Efecto Matrix animado                    |
+| **JSON estructurado** | Datos del portfolio                      |
 
-🔹 Background tipo Matrix
-Animación desarrollada con Canvas API, optimizada para no afectar el rendimiento principal.
+## 📂 **Estructura del proyecto**
 
-🔹 Diseño completamente responsive
-Interfaz adaptable a móvil, tablet y escritorio, incluyendo banners ASCII dinámicos según resolución.
-
-🔹 Navegación rápida en dispositivos móviles
-Menú lateral optimizado con acceso directo a comandos frecuentes.
-
-🔹 Código estructurado y comentado profesionalmente
-Cada módulo incluye comentarios que explican la intención arquitectónica y las decisiones técnicas.
-
-🧰 Stack tecnológico
-Tecnología	Rol dentro del proyecto
-Preact	Librería ligera para la interfaz
-TypeScript	Tipado estático y robustez del código
-TailwindCSS	Sistema de estilos utilitarios
-Vite	Entorno de desarrollo y build ultrarrápido
-Canvas API	Animación de fondo estilo Matrix
-JSON estructurado	Fuente dinámica del contenido del portfolio
-📦 Organización del proyecto
+```
 src/
  ├── components/
  │    ├── terminal/
@@ -59,53 +56,40 @@ src/
  ├── data/
  ├── styles/
  └── utils/
+```
 
-Descripción general
+- **components/** → UI modular y desacoplada
+    
+- **core/hooks/** → lógica de negocio (useTerminal)
+    
+- **data/** → JSON con contenido del portfolio
+    
+- **utils/** → formateadores y helpers
+    
+- **styles/** → estilos globales y Tailwind
 
-components/ → Elementos visuales desacoplados
+## 🧱 **Decisiones de arquitectura**
 
-core/hooks/ → Lógica central (incluye useTerminal)
+- **Separación estricta UI ↔ lógica:** La terminal funciona mediante un hook central (`useTerminal`) totalmente desacoplado de la UI.
+    
+- **Formateadores puros:** Cada sección del portfolio tiene su propio formateador, lo que facilita mantenimiento y escalabilidad.
+    
+- **JSON como fuente de datos:** El contenido del portfolio es editable sin tocar código.
+    
+- **Canvas independiente:** El efecto Matrix no afecta al rendimiento de la UI.
+    
+- **Documentación exhaustiva:** Cada archivo explica intención, no solo funcionamiento.
 
-data/ → Contenido editable del portfolio
+## 🗺️ **Roadmap**
 
-utils/ → Funciones auxiliares y formateadores
+- [ ] Añadir sección de PROYECTOS
+- [ ] Añadir descarga de CV
+- [ ] Añadir función para cambiar idioma a Ingles
+- [ ] Añadir función para cambiar estilo Hacker (Verde) / Red Team (Rojo - Actual) / Blue Team (Azul)
+- [ ] Añadir animación de glitch opcional
 
-styles/ → Configuración global y Tailwind
-
-🏗️ Enfoque arquitectónico
-
-🔸 Separación clara entre interfaz y lógica de negocio.
-
-🔸 Hook central (useTerminal) responsable del motor de la terminal.
-
-🔸 Formateadores independientes por sección para facilitar escalabilidad.
-
-🔸 Datos gestionados mediante JSON para permitir edición sin modificar lógica.
-
-🔸 Animación Canvas aislada para mantener rendimiento óptimo.
-
-🔸 Código documentado con enfoque profesional, explicando el por qué, no solo el cómo.
-
-📌 Próximas mejoras
-
- Incorporar sección de proyectos detallados
-
- Añadir descarga directa de CV
-
- Implementar selector de idioma (ES / EN)
-
- Sistema de cambio de tema:
-
-🟢 Hacker (verde)
-
-🔴 Red Team (actual)
-
-🔵 Blue Team
-
- Activar efecto glitch opcional
-
-👤 **Autor**
+## 👤 **Autor**
 
 **Robert Bou Poveda** 
 Analista de Ciberseguridad · Pentester
-[LinkedIn](www.linkedin.com/in/robert-bou-poveda-919295248/) | [GitHub](https://github.com/DonTrebor1) | robertbp90@gmail.com
+[LinkedIn](https://www.linkedin.com/in/robert-bou-poveda-919295248) | [GitHub](https://github.com/DonTrebor1) | robertbp90@gmail.com
