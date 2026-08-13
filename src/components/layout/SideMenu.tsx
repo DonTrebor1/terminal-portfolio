@@ -19,15 +19,51 @@
  * Esto mantiene la UI completamente desacoplada de la lógica interna (SRP - SOLID).
  */
 
+const LABELS = {
+  es: {
+    navegacion: "Navegación",
+    whoami: "WHOAMI",
+    perfil: "PERFIL",
+    estudios: "ESTUDIOS",
+    experiencia: "EXPERIENCIA",
+    habilidades: "HABILIDADES",
+    certificaciones: "CERTIFICACIONES",
+    contacto: "CONTACTO",
+    allInfo: "ALL INFO",
+    masOpciones: "Más opciones",
+    proximamente: "Próximamente...",
+    idioma: "Idioma",
+  },
+  en: {
+    navegacion: "Navigation",
+    whoami: "WHOAMI",
+    perfil: "PROFILE",
+    estudios: "EDUCATION",
+    experiencia: "EXPERIENCE",
+    habilidades: "SKILLS",
+    certificaciones: "CERTIFICATIONS",
+    contacto: "CONTACT",
+    allInfo: "ALL INFO",
+    masOpciones: "More options",
+    proximamente: "Coming soon...",
+    idioma: "Language",
+  },
+};
+
 export default function SideMenu({
   open,
   onClose,
   runCommand,
+  lang = "es",
+  onToggleLang,
 }: {
   open: boolean;                           // Controla si el menú está visible
   onClose: () => void;                     // Cierra el menú (solo UI)
   runCommand: (cmd: string) => Promise<void>; // Ejecuta comandos en la terminal
+  lang?: "es" | "en";                        // Idioma actual
+  onToggleLang?: () => void;                 // Alterna ES/EN
 }) {
+  const t = LABELS[lang];
   return (
     <>
       {/**
@@ -61,7 +97,7 @@ export default function SideMenu({
        *  - Se mantiene z-50 para estar por encima del overlay
        */}
       <aside
-        class={`fixed top-0 right-0 h-full w-64 bg-[#0a0a0a] border-l border-red-600 shadow-xl z-50 transform transition-transform duration-300 ${
+        class={`fixed top-0 right-0 h-full w-64 bg-[#0a0a0a] border-l border-[var(--accent)] shadow-xl z-50 transform transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -77,94 +113,94 @@ export default function SideMenu({
            * Esto permite navegar sin escribir manualmente.
            */}
           <div class="space-y-2 lg:hidden">
-            <p class="text-sm text-[var(--gray-terminal)]">Navegación</p>
+            <p class="text-sm text-[var(--gray-terminal)]">{t.navegacion}</p>
 
             {/* WHOAMI */}
             <button
-              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-red-900/30 transition"
+              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-[var(--accent)]/20 transition"
               onClick={() => {
                 onClose();
                 runCommand("whoami");
               }}
             >
-              WHOAMI
+              {t.whoami}
             </button>
 
             {/* PERFIL */}
             <button
-              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-red-900/30 transition"
+              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-[var(--accent)]/20 transition"
               onClick={() => {
                 onClose();
                 runCommand("cat profile.txt");
               }}
             >
-              PERFIL
+              {t.perfil}
             </button>
 
             {/* ESTUDIOS */}
             <button
-              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-red-900/30 transition"
+              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-[var(--accent)]/20 transition"
               onClick={() => {
                 onClose();
                 runCommand("cat edu.txt");
               }}
             >
-              ESTUDIOS
+              {t.estudios}
             </button>
 
             {/* EXPERIENCIA */}
             <button
-              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-red-900/30 transition"
+              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-[var(--accent)]/20 transition"
               onClick={() => {
                 onClose();
                 runCommand("cat exp.txt");
               }}
             >
-              EXPERIENCIA
+              {t.experiencia}
             </button>
 
             {/* HABILIDADES */}
             <button
-              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-red-900/30 transition"
+              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-[var(--accent)]/20 transition"
               onClick={() => {
                 onClose();
                 runCommand("cat skills.txt");
               }}
             >
-              HABILIDADES
+              {t.habilidades}
             </button>
 
             {/* CERTIFICACIONES */}
             <button
-              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-red-900/30 transition"
+              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-[var(--accent)]/20 transition"
               onClick={() => {
                 onClose();
                 runCommand("cat certs.txt");
               }}
             >
-              CERTIFICACIONES
+              {t.certificaciones}
             </button>
 
             {/* CONTACTO */}
             <button
-              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-red-900/30 transition"
+              class="w-full text-left px-3 py-2 bg-black border border-white-600 rounded hover:bg-[var(--accent)]/20 transition"
               onClick={() => {
                 onClose();
                 runCommand("cat contact.txt");
               }}
             >
-              CONTACTO
+              {t.contacto}
             </button>
 
             {/* ALL INFO */}
             <button
-              class="w-full text-left px-3 py-2 bg-black border border-red-600 rounded hover:bg-red-900/30 transition text-[var(--red-accent)]"
+              class="w-full text-left px-3 py-2 bg-black border border-[var(--accent)] rounded hover:bg-[var(--accent)]/20 transition text-[var(--accent)]"
               onClick={() => {
                 onClose();
                 runCommand("whoami && cat *.txt");
               }}
             >
-              ALL INFO
+              {t.allInfo}
             </button>
           </div>
 
@@ -182,15 +218,19 @@ export default function SideMenu({
           {/**
            * SECCIÓN "Más opciones"
            *
-           * Placeholder para futuras extensiones del menú.
-           * Mantiene la estructura modular del componente.
+           * Contiene el selector de idioma (ES/EN).
            */}
           <div class="space-y-2">
-            <p class="text-sm text-[var(--gray-terminal)]">Más opciones</p>
+            <p class="text-sm text-[var(--gray-terminal)]">{t.masOpciones}</p>
 
-            <button class="w-full text-left px-3 py-2 bg-black border border-gray-600 rounded hover:bg-gray-800 transition">
-              Próximamente...
-            </button>
+            {onToggleLang && (
+              <button
+                class="w-full text-left px-3 py-2 bg-black border border-[var(--accent)] text-[var(--accent)] rounded hover:bg-[var(--accent)]/20 transition"
+                onClick={onToggleLang}
+              >
+                {t.idioma}: {lang === "es" ? "Español → English" : "English → Español"}
+              </button>
+            )}
           </div>
         </div>
       </aside>

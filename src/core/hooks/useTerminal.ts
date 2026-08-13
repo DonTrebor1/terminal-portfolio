@@ -10,7 +10,7 @@
  * La UI (TerminalBody, TerminalPrompt, etc.) nunca conoce la lógica interna.
  * Esto sigue el principio de separación de responsabilidades (SRP - SOLID).
  */
-import { useState } from "preact/hooks";
+import { useEffect, useRef, useState } from "preact/hooks";
 
 // Importación de datos estáticos (contenido mostrado en la terminal)
 import whoami from "../../data/whoami.json";
@@ -35,7 +35,7 @@ import {
   textToHtml,
 } from "../utils/formatters";
 
-export function useTerminal() {
+export function useTerminal(lang: "es" | "en" = "es") {
   /**
    * Selección del banner inicial según tamaño de pantalla.
    * Esto mejora la UX en móvil/tablet/desktop sin duplicar lógica en la UI.
@@ -98,13 +98,13 @@ export function useTerminal() {
     let typed = "";
     const promptStart =
       `<div class="font-mono text-sm leading-tight">` +
-      `<div class="text-[var(--red-accent)]">` +
+      `<div class="text-[var(--accent)]">` +
       `┌──(<span class="text-[var(--white-soft)]">kali</span>` +
-      `<span class="text-[var(--red-soft)]">㉿</span>` +
+      `<span class="text-[var(--accent-soft)]">㉿</span>` +
       `<span class="text-[var(--white-soft)]">portfolio</span>)-[` +
       `<span class="text-[var(--white-soft)]">~</span>]</div>` +
       `<div class="flex items-center">` +
-      `<span class="text-[var(--red-accent)]">└─$</span>` +
+      `<span class="text-[var(--accent)]">└─$</span>` +
       `<span class="ml-2 text-[var(--white-soft)]">`;
     const promptEnd = `</span></div></div>`;
 
@@ -139,25 +139,25 @@ export function useTerminal() {
    */
   function generateAllInfo() {
     return `
-${formatWhoami(whoami)}
+${formatWhoami(whoami[lang], lang)}
 ${sectionSeparator()}
 
-${formatPerfil(perfil)}
+${formatPerfil(perfil[lang], lang)}
 ${sectionSeparator()}
 
-${formatEstudios(estudios)}
+${formatEstudios(estudios[lang], lang)}
 ${sectionSeparator()}
 
-${formatExperiencia(experiencia)}
+${formatExperiencia(experiencia[lang], lang)}
 ${sectionSeparator()}
 
-${formatSkills(skills)}
+${formatSkills(skills[lang], lang)}
 ${sectionSeparator()}
 
-${formatCertificaciones(certificaciones)}
+${formatCertificaciones(certificaciones[lang], lang)}
 ${sectionSeparator()}
 
-${formatContacto(contacto)}
+${formatContacto(contacto[lang], lang)}
 `;
   }
 
@@ -171,40 +171,65 @@ ${formatContacto(contacto)}
    *
    * Se mantiene simple y explícito para facilitar mantenimiento.
    */
-  async function runCommand(cmd: string) {
+  async function runCommand(cmd: string, skipTyping = false) {
+    lastCommandRef.current = cmd;
     setHasInteracted(true);
     clear();
-    await typeCommand(cmd);
+    if (!skipTyping) await typeCommand(cmd);
 
     switch (cmd) {
       case "whoami":
-        print(formatWhoami(whoami), "html");
+        print(formatWhoami(whoami[lang], lang), "html");
         break;
       case "cat profile.txt":
-        print(formatPerfil(perfil), "html");
+        print(formatPerfil(perfil[lang], lang), "html");
         break;
       case "cat edu.txt":
-        print(formatEstudios(estudios), "html");
+        print(formatEstudios(estudios[lang], lang), "html");
         break;
       case "cat exp.txt":
-        print(formatExperiencia(experiencia), "html");
+        print(formatExperiencia(experiencia[lang], lang), "html");
         break;
       case "cat skills.txt":
-        print(formatSkills(skills), "html");
+        print(formatSkills(skills[lang], lang), "html");
         break;
       case "cat certs.txt":
-        print(formatCertificaciones(certificaciones), "html");
+        print(formatCertificaciones(certificaciones[lang], lang), "html");
         break;
       case "cat contact.txt":
-        print(formatContacto(contacto), "html");
+        print(formatContacto(contacto[lang], lang), "html");
         break;
       case "whoami && cat *.txt":
         print(generateAllInfo(), "html");
         break;
       default:
-        print(textToHtml(`Comando no encontrado: ${cmd}`), "html");
+        print(
+          textToHtml(
+            lang === "en"
+              ? `Command not found: ${cmd}`
+              : `Comando no encontrado: ${cmd}`
+          ),
+          "html"
+        );
     }
   }
+
+  /**
+   * Referencia al último comando ejecutado.
+   *
+   * Se usa para volver a renderizar la sección actual (sin animación)
+   * cuando el usuario cambia de idioma, sin perder el contexto.
+   */
+  const lastCommandRef = useRef<string | null>(null);
+  const prevLangRef = useRef(lang);
+
+  useEffect(() => {
+    if (prevLangRef.current === lang) return;
+    prevLangRef.current = lang;
+    if (lastCommandRef.current) {
+      runCommand(lastCommandRef.current, true);
+    }
+  }, [lang]);
 
   // API pública del hook
   return {

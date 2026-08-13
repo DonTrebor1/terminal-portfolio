@@ -6,13 +6,13 @@
  * y facilitar cambios de tema en el futuro.
  *
  * Decisiones de diseño:
- *  - Colores inspirados en estética Red Team / terminal hacker
+ *  - Colores inspirados en estética hacker / terminal Matrix
  *  - Tonos suaves para evitar saturación visual
  *  - Nombres semánticos para facilitar mantenimiento
  */
 :root {
-  --red-accent: #e60026; /* Rojo elegante, profesional */
-  --red-soft: #ff0033; /* Rojo suave para detalles */
+  --accent: #00e676; /* Verde elegante, profesional */
+  --accent-soft: #39ff14; /* Verde brillante para detalles */
   --black-carbon: #0d0d0d; /* Negro carbón */
   --gray-terminal: #cfcfcf; /* Gris terminal */
   --white-soft: #f2f2f2; /* Blanco suave */
@@ -30,23 +30,23 @@
 }
 
 /**
- * Efecto glow rojo para elementos interactivos.
+ * Efecto glow verde para elementos interactivos.
  *
- * Se usa en botones clave para reforzar la estética Red Team.
+ * Se usa en botones clave para reforzar la estética hacker.
  * El glow es suave para evitar ruido visual.
  */
-.glow-red:hover {
-  box-shadow: 0 0 12px rgba(230, 0, 38, 0.45);
+.glow-accent:hover {
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.45);
 }
 
 /**
- * Borde superior rojo para paneles estilo terminal.
+ * Borde superior verde para paneles estilo terminal.
  *
  * Se usa en LoginPanel y otros contenedores importantes.
  * Refuerza la identidad visual del portfolio.
  */
-.border-top-red {
-  border-top: 2px solid var(--red-accent);
+.border-top-accent {
+  border-top: 2px solid var(--accent);
 }
 
 /**
@@ -56,15 +56,15 @@
  * Esto permite mantener consistencia sin repetir clases.
  */
 .nav-btn {
-  @apply text-[var(--red-soft)] hover:text-[var(--white-accent)] transition-colors duration-200;
+  @apply text-[var(--accent-soft)] hover:text-[var(--white-soft)] transition-colors duration-200;
 }
 
 /**
- * Scrollbar personalizado estilo Red Team.
+ * Scrollbar personalizado estilo hacker.
  *
  * Decisiones de diseño:
  *  - Scroll rectangular (sin bordes redondeados) para estética CLI
- *  - Colores rojo oscuro y rojo brillante para coherencia temática
+ *  - Colores verde oscuro y verde brillante para coherencia temática
  *  - Track negro para integrarse con el fondo de la terminal
  *
  * Solo afecta a contenedores con clase .terminal-scroll.
@@ -75,17 +75,17 @@
 
 .terminal-scroll::-webkit-scrollbar-track {
   background: #000; /* interior negro */
-  border: 1px solid #8b0000; /* borde rojo oscuro */
+  border: 1px solid #005c22; /* borde verde oscuro */
 }
 
 .terminal-scroll::-webkit-scrollbar-thumb {
-  background: #8b0000; /* rojo oscuro */
-  border: 1px solid #ff0000; /* borde rojo brillante */
+  background: #005c22; /* verde oscuro */
+  border: 1px solid #00ff00; /* borde verde brillante */
   border-radius: 0; /* rectangular */
 }
 
 .terminal-scroll::-webkit-scrollbar-thumb:hover {
-  background: #ff0000; /* rojo más brillante al pasar el ratón */
+  background: #00ff00; /* verde más brillante al pasar el ratón */
 }
 
 /**

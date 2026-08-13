@@ -42,6 +42,25 @@ export function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   /**
+   * Idioma actual del portfolio (ES/EN).
+   *
+   * Se persiste en localStorage para recordar la preferencia
+   * del visitante entre visitas.
+   */
+  const [lang, setLang] = useState<"es" | "en">(() => {
+    const saved = localStorage.getItem("lang");
+    return saved === "en" ? "en" : "es";
+  });
+
+  function toggleLang() {
+    setLang((prev) => {
+      const next = prev === "es" ? "en" : "es";
+      localStorage.setItem("lang", next);
+      return next;
+    });
+  }
+
+  /**
    * Hook que contiene:
    *  - historial de salida
    *  - animación de comandos
@@ -50,7 +69,7 @@ export function App() {
    *
    * La UI nunca conoce la lógica interna de la terminal.
    */
-  const terminal = useTerminal();
+  const terminal = useTerminal(lang);
 
   return (
     <div class="relative min-h-screen flex flex-col">
@@ -62,6 +81,8 @@ export function App() {
         <PageHeader
           onMenuToggle={() => setMenuOpen(true)}
           runCommand={terminal.runCommand}
+          lang={lang}
+          onToggleLang={toggleLang}
         />
       )}
 
@@ -73,6 +94,8 @@ export function App() {
           setMenuOpen(false); // Cierra el menú antes de ejecutar
           return terminal.runCommand(cmd);
         }}
+        lang={lang}
+        onToggleLang={toggleLang}
       />
 
       {/* Contenedor principal de contenido */}
@@ -81,19 +104,19 @@ export function App() {
         {stage === "login" && (
           <div class="flex-grow flex items-center justify-center">
             {/* LoginPanel controla su propia animación y llama a onLogin */}
-            <LoginPanel onLogin={() => setStage("terminal")} />
+            <LoginPanel onLogin={() => setStage("terminal")} lang={lang} />
           </div>
         )}
 
         {/* TERMINAL */}
         {stage === "terminal" && (
           <div class="flex-grow flex items-start justify-center">
-            <Terminal terminal={terminal} />
+            <Terminal terminal={terminal} lang={lang} />
           </div>
         )}
 
         {/* Footer fijo al final en modo terminal */}
-        {stage === "terminal" && <Footer />}
+        {stage === "terminal" && <Footer lang={lang} />}
       </div>
     </div>
   );

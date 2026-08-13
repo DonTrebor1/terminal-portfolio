@@ -30,23 +30,26 @@ type TerminalState = {
 
 export default function TerminalBody({
   terminal,
+  lang = "es",
 }: {
   terminal: TerminalState;
+  lang?: "es" | "en";
 }) {
   /**
-   * Selección del mensaje de bienvenida según tamaño de pantalla.
-   * 
+   * Selección del mensaje de bienvenida según tamaño de pantalla e idioma.
+   *
    * Esto mejora la UX adaptando el contenido a móvil/tablet/desktop.
    * La lógica se mantiene aquí porque depende del renderizado, no del estado.
    */
   const width = window.innerWidth;
+  const messages = ascii[lang];
 
   const welcomeMessage: string | undefined = !terminal.hasInteracted
     ? width < 640
-      ? ascii.messageMobile
+      ? messages.messageMobile
       : width < 1024
-        ? ascii.messageTablet
-        : ascii.messageDesktop
+        ? messages.messageTablet
+        : messages.messageDesktop
     : undefined;
 
   return (

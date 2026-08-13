@@ -1,8 +1,18 @@
 {
-  "name": "<span style=\"color:#0fff00\">Robert Bou Poveda</span>",
-  "role": "<span style=\"color:#e60026\">Analista de Ciberseguridad en formación</span>",
-  "description": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua.",
-  "text": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua.",
-  "about": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua.",
-  "info": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua."
+  "es": {
+    "name": "<span style=\"color:#0fff00\">Robert Bou Poveda</span>",
+    "role": "<span style=\"color:#00e676\">Analista de Ciberseguridad en formación</span>",
+    "description": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua.",
+    "text": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua.",
+    "about": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua.",
+    "info": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua."
+  },
+  "en": {
+    "name": "<span style=\"color:#0fff00\">Robert Bou Poveda</span>",
+    "role": "<span style=\"color:#00e676\">Cybersecurity Analyst in training</span>",
+    "description": "Professional transitioning into cybersecurity with a solid background in technology, systems, and problem-solving. Focused on hands-on learning in labs, networking, and vulnerability analysis, with an interest in pentesting and continuous improvement.",
+    "text": "Professional transitioning into cybersecurity with a solid background in technology, systems, and problem-solving. Focused on hands-on learning in labs, networking, and vulnerability analysis, with an interest in pentesting and continuous improvement.",
+    "about": "Professional transitioning into cybersecurity with a solid background in technology, systems, and problem-solving. Focused on hands-on learning in labs, networking, and vulnerability analysis, with an interest in pentesting and continuous improvement.",
+    "info": "Professional transitioning into cybersecurity with a solid background in technology, systems, and problem-solving. Focused on hands-on learning in labs, networking, and vulnerability analysis, with an interest in pentesting and continuous improvement."
+  }
 }

@@ -1,86 +1,174 @@
 {
-  "title": "<span style=\"color:#fffd00\">Formación Académica</span>",
-  "items": [
-    {
-      "id": "<span style=\"color:#3399ff\">[01]</span>",
-      "titulo": "Máster de Ciberseguridad & IA",
-      "inicio": "2025",
-      "fin": "Actualidad",
-      "centro": "Evolve Academy",
-      "ubicacion": "Remoto",
-      "temas": [
-        { "icon": "[!]", "color": "red", "text": "En formación (matriculado desde Oct 2025)" },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Seguridad ofensiva\n\t\t- Metodologías de pentesting\n\t\t- Reconocimiento, enumeración y explotación\n\t\t- Herramientas: Nmap, Burp Suite, Metasploit"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Análisis y respuesta a incidentes\n\t\t- Detección y contención de amenazas\n\t\t- Análisis de tráfico y evidencias\n\t\t- Herramientas: Wireshark, Autopsy, Volatility"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Seguridad en sistemas Windows y Linux\n\t\t- Hardening de sistemas\n\t\t- Gestión de permisos y servicios\n\t\t- Monitorización básica"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Automatización aplicada a seguridad\n\t\t- Scripting para tareas repetitivas\n\t\t- Enfoque práctico en laboratorio"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Inteligencia Artificial aplicada a ciberseguridad\n\t\t- Uso de IA como apoyo a detección y análisis\n\t\t- Comprensión de riesgos y limitaciones"
-        }
-      ]
-    },
-    {
-      "id": "<span style=\"color:#3399ff\">[02]</span>",
-      "titulo": "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
-      "inicio": "2023",
-      "fin": "2025",
-      "centro": "Universae",
-      "ubicacion": "España (Remoto)",
-      "temas": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Desarrollo backend y frontend\n\t\t- Arquitectura de aplicaciones\n\t\t- Integración de bases de datos\n\t\t- Buenas prácticas de desarrollo"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Programación\n\t\t- Lógica de aplicación\n\t\t- Mantenimiento y optimización de código"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Bases de datos\n\t\t- Modelado de datos\n\t\t- Consultas SQL\n\t\t- Gestión de información"
-        }
-      ]
-    },
-    {
-      "id": "<span style=\"color:#3399ff\">[06]</span>",
-      "titulo": "Ciberseguridad autodidacta (laboratorios prácticos)",
-      "inicio": "2024",
-      "fin": "Actualidad",
-      "centro": "Hack The Box · PortSwigger",
-      "ubicacion": "Online",
-      "temas": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Pentesting web\n\t\t- OWASP Top 10\n\t\t- Identificación de vulnerabilidades"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Aprendizaje basado en laboratorio\n\t\t- Resolución práctica de escenarios\n\t\t- Mentalidad ofensiva y analítica"
-        }
-      ]
-    }
-  ]
+  "es": {
+    "title": "<span style=\"color:#fffd00\">Formación Académica</span>",
+    "items": [
+      {
+        "id": "<span style=\"color:#3399ff\">[01]</span>",
+        "titulo": "Máster de Ciberseguridad & IA",
+        "inicio": "2025",
+        "fin": "2026",
+        "centro": "Evolve Academy",
+        "ubicacion": "Remoto",
+        "temas": [
+          { "icon": "[+]", "color": "green", "text": "Finalizado en julio de 2026" },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Seguridad ofensiva\n\t\t- Metodologías de pentesting\n\t\t- Reconocimiento, enumeración y explotación\n\t\t- Herramientas: Nmap, Burp Suite, Metasploit"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Análisis y respuesta a incidentes\n\t\t- Detección y contención de amenazas\n\t\t- Análisis de tráfico y evidencias\n\t\t- Herramientas: Wireshark, Autopsy, Volatility"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Seguridad en sistemas Windows y Linux\n\t\t- Hardening de sistemas\n\t\t- Gestión de permisos y servicios\n\t\t- Monitorización básica"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Automatización aplicada a seguridad\n\t\t- Scripting para tareas repetitivas\n\t\t- Enfoque práctico en laboratorio"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Inteligencia Artificial aplicada a ciberseguridad\n\t\t- Uso de IA como apoyo a detección y análisis\n\t\t- Comprensión de riesgos y limitaciones"
+          }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[02]</span>",
+        "titulo": "Técnico Superior en Desarrollo de Aplicaciones Web (DAW)",
+        "inicio": "2023",
+        "fin": "2025",
+        "centro": "Universae",
+        "ubicacion": "España (Remoto)",
+        "temas": [
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Desarrollo backend y frontend\n\t\t- Arquitectura de aplicaciones\n\t\t- Integración de bases de datos\n\t\t- Buenas prácticas de desarrollo"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Programación\n\t\t- Lógica de aplicación\n\t\t- Mantenimiento y optimización de código"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Bases de datos\n\t\t- Modelado de datos\n\t\t- Consultas SQL\n\t\t- Gestión de información"
+          }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[06]</span>",
+        "titulo": "Ciberseguridad autodidacta (laboratorios prácticos)",
+        "inicio": "2024",
+        "fin": "Actualidad",
+        "centro": "Hack The Box · PortSwigger",
+        "ubicacion": "Online",
+        "temas": [
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Pentesting web\n\t\t- OWASP Top 10\n\t\t- Identificación de vulnerabilidades"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Aprendizaje basado en laboratorio\n\t\t- Resolución práctica de escenarios\n\t\t- Mentalidad ofensiva y analítica"
+          }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "<span style=\"color:#fffd00\">Academic Background</span>",
+    "items": [
+      {
+        "id": "<span style=\"color:#3399ff\">[01]</span>",
+        "titulo": "Master's in Cybersecurity & AI",
+        "inicio": "2025",
+        "fin": "2026",
+        "centro": "Evolve Academy",
+        "ubicacion": "Remote",
+        "temas": [
+          { "icon": "[+]", "color": "green", "text": "Completed in July 2026" },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Offensive security\n\t\t- Pentesting methodologies\n\t\t- Reconnaissance, enumeration and exploitation\n\t\t- Tools: Nmap, Burp Suite, Metasploit"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Incident analysis and response\n\t\t- Threat detection and containment\n\t\t- Traffic and evidence analysis\n\t\t- Tools: Wireshark, Autopsy, Volatility"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Windows and Linux systems security\n\t\t- System hardening\n\t\t- Permissions and services management\n\t\t- Basic monitoring"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Security-focused automation\n\t\t- Scripting for repetitive tasks\n\t\t- Practical lab-based approach"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Artificial Intelligence applied to cybersecurity\n\t\t- Using AI to support detection and analysis\n\t\t- Understanding risks and limitations"
+          }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[02]</span>",
+        "titulo": "Higher Technician in Web Application Development (DAW)",
+        "inicio": "2023",
+        "fin": "2025",
+        "centro": "Universae",
+        "ubicacion": "Spain (Remote)",
+        "temas": [
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Backend and frontend development\n\t\t- Application architecture\n\t\t- Database integration\n\t\t- Development best practices"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Programming\n\t\t- Application logic\n\t\t- Code maintenance and optimization"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Databases\n\t\t- Data modeling\n\t\t- SQL queries\n\t\t- Information management"
+          }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[06]</span>",
+        "titulo": "Self-taught cybersecurity (hands-on labs)",
+        "inicio": "2024",
+        "fin": "Present",
+        "centro": "Hack The Box · PortSwigger",
+        "ubicacion": "Online",
+        "temas": [
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Web pentesting\n\t\t- OWASP Top 10\n\t\t- Vulnerability identification"
+          },
+          {
+            "icon": "[+]",
+            "color": "green",
+            "text": "Lab-based learning\n\t\t- Hands-on scenario resolution\n\t\t- Offensive and analytical mindset"
+          }
+        ]
+      }
+    ]
+  }
 }

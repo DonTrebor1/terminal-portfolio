@@ -1,17 +1,34 @@
 {
-  "title": "<span style=\"color:#fffd00\">Perfil Profesional</span>",
-  "description": "<span style=\"color:#e60026\">Analista de Ciberseguridad en formación</span> con base técnica en sistemas, redes y desarrollo. Orientado al aprendizaje práctico en laboratorios, análisis de vulnerabilidades y mejora continua, con especial interés en <span style=\"color:#fffd00\">Red Team</span> y defensa de infraestructuras.",
-  "specialization": [
-    { "icon": "[+]", "color": "green", "text": "Fundamentos de Redes" },
-    { "icon": "[+]", "color": "green", "text": "Análisis de Vulnerabilidades" },
-    { "icon": "[+]", "color": "green", "text": "Laboratorios de Pentesting" },
-    { "icon": "[+]", "color": "green", "text": "Scripting básico y automatización" },
-    { "icon": "[+]", "color": "green", "text": "Bases de Programación" }
-  ],
-  "goals": [
-    { "icon": "[→]", "color": "orange", "text": "Continuar  mi carrera profesional en ciberseguridad" },
-    { "icon": "[→]", "color": "orange", "text": "Especializarme en Pentesting y seguridad ofensiva" },
-    { "icon": "[→]", "color": "orange", "text": "Seguir aprendiendo y evolucionando constantemente" }
-  ]
+  "es": {
+    "title": "<span style=\"color:#fffd00\">Perfil Profesional</span>",
+    "description": "<span style=\"color:#00e676\">Analista de Ciberseguridad en formación</span> con base técnica en sistemas, redes y desarrollo. Orientado al aprendizaje práctico en laboratorios, análisis de vulnerabilidades y mejora continua, con especial interés en <span style=\"color:#fffd00\">Red Team</span> y defensa de infraestructuras.",
+    "specialization": [
+      { "icon": "[+]", "color": "green", "text": "Fundamentos de Redes" },
+      { "icon": "[+]", "color": "green", "text": "Análisis de Vulnerabilidades" },
+      { "icon": "[+]", "color": "green", "text": "Laboratorios de Pentesting" },
+      { "icon": "[+]", "color": "green", "text": "Scripting básico y automatización" },
+      { "icon": "[+]", "color": "green", "text": "Bases de Programación" }
+    ],
+    "goals": [
+      { "icon": "[→]", "color": "orange", "text": "Continuar mi carrera profesional en ciberseguridad" },
+      { "icon": "[→]", "color": "orange", "text": "Especializarme en Pentesting y seguridad ofensiva" },
+      { "icon": "[→]", "color": "orange", "text": "Seguir aprendiendo y evolucionando constantemente" }
+    ]
+  },
+  "en": {
+    "title": "<span style=\"color:#fffd00\">Professional Profile</span>",
+    "description": "<span style=\"color:#00e676\">Cybersecurity Analyst in training</span> with a technical background in systems, networking, and development. Focused on hands-on lab learning, vulnerability analysis, and continuous improvement, with a particular interest in <span style=\"color:#fffd00\">Red Team</span> and infrastructure defense.",
+    "specialization": [
+      { "icon": "[+]", "color": "green", "text": "Networking Fundamentals" },
+      { "icon": "[+]", "color": "green", "text": "Vulnerability Analysis" },
+      { "icon": "[+]", "color": "green", "text": "Pentesting Labs" },
+      { "icon": "[+]", "color": "green", "text": "Basic scripting and automation" },
+      { "icon": "[+]", "color": "green", "text": "Programming fundamentals" }
+    ],
+    "goals": [
+      { "icon": "[→]", "color": "orange", "text": "Continue my professional career in cybersecurity" },
+      { "icon": "[→]", "color": "orange", "text": "Specialize in Pentesting and offensive security" },
+      { "icon": "[→]", "color": "orange", "text": "Keep learning and evolving constantly" }
+    ]
+  }
 }
-

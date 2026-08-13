@@ -17,22 +17,50 @@
  *  - Botón hamburguesa siempre visible para UX consistente
  */
 
+const LABELS = {
+  es: {
+    whoami: "WHOAMI",
+    perfil: "PERFIL",
+    estudios: "ESTUDIOS",
+    experiencia: "EXPERIENCIA",
+    habilidades: "HABILIDADES",
+    certificaciones: "CERTIFICACIONES",
+    contacto: "CONTACTO",
+    allInfo: "ALL INFO",
+  },
+  en: {
+    whoami: "WHOAMI",
+    perfil: "PROFILE",
+    estudios: "EDUCATION",
+    experiencia: "EXPERIENCE",
+    habilidades: "SKILLS",
+    certificaciones: "CERTIFICATIONS",
+    contacto: "CONTACT",
+    allInfo: "ALL INFO",
+  },
+};
+
 export default function PageHeader({
   onMenuToggle,
   runCommand,
+  lang = "es",
+  onToggleLang,
 }: {
   onMenuToggle: () => void;                 // Abre el menú lateral (solo UI)
   runCommand: (cmd: string) => Promise<void>; // Ejecuta comandos en la terminal
+  lang?: "es" | "en";                         // Idioma actual
+  onToggleLang?: () => void;                  // Alterna ES/EN
 }) {
+  const t = LABELS[lang];
   return (
     /**
      * Header fijo en la parte superior.
      * 
      * - bg-black/80 + backdrop-blur-sm → efecto de cristal oscuro
-     * - border-red-600 → coherencia con estética Red Team
+     * - border-[var(--accent)] → coherencia con estética Red Team
      * - fixed + z-50 → siempre visible por encima del contenido
      */
-    <header class="w-full bg-black/80 border-b border-red-600 backdrop-blur-sm fixed top-0 left-0 z-50">
+    <header class="w-full bg-black/80 border-b border-[var(--accent)] backdrop-blur-sm fixed top-0 left-0 z-50">
       <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center">
 
         {/** 
@@ -43,8 +71,8 @@ export default function PageHeader({
          * coherencia visual con el resto de la interfaz.
          */}
         <div class="flex-shrink-0">
-          <div class="text-[var(--red-accent)] font-mono font-bold text-lg">
-            <span class="text-[var(--red-soft)] mr-2">&gt;</span>DONTREBOR1
+          <div class="text-[var(--accent)] font-mono font-bold text-lg">
+            <span class="text-[var(--accent-soft)] mr-2">&gt;</span>DONTREBOR1
           </div>
         </div>
 
@@ -60,25 +88,25 @@ export default function PageHeader({
          */}
         <div class="hidden lg:flex flex-1 justify-center space-x-6 font-mono text-sm">
           <button class="nav-btn" onClick={() => runCommand("whoami")}>
-            WHOAMI
+            {t.whoami}
           </button>
           <button class="nav-btn" onClick={() => runCommand("cat profile.txt")}>
-            PERFIL
+            {t.perfil}
           </button>
           <button class="nav-btn" onClick={() => runCommand("cat edu.txt")}>
-            ESTUDIOS
+            {t.estudios}
           </button>
           <button class="nav-btn" onClick={() => runCommand("cat exp.txt")}>
-            EXPERIENCIA
+            {t.experiencia}
           </button>
           <button class="nav-btn" onClick={() => runCommand("cat skills.txt")}>
-            HABILIDADES
+            {t.habilidades}
           </button>
           <button class="nav-btn" onClick={() => runCommand("cat certs.txt")}>
-            CERTIFICACIONES
+            {t.certificaciones}
           </button>
           <button class="nav-btn" onClick={() => runCommand("cat contact.txt")}>
-            CONTACTO
+            {t.contacto}
           </button>
 
           {/**
@@ -87,10 +115,10 @@ export default function PageHeader({
            * Útil para reclutadores que quieren una visión completa.
            */}
           <button
-            class="nav-btn text-[var(--red-accent)]"
+            class="nav-btn text-[var(--accent)]"
             onClick={() => runCommand("whoami && cat *.txt")}
           >
-            ALL INFO
+            {t.allInfo}
           </button>
         </div>
 
@@ -98,6 +126,7 @@ export default function PageHeader({
          * COLUMNA DERECHA
          *
          * Contiene:
+         *  - Botón de idioma ES/EN
          *  - Botón hamburguesa (siempre visible)
          *
          * Decisión de diseño:
@@ -105,10 +134,19 @@ export default function PageHeader({
          *    para mantener consistencia visual y accesibilidad.
          */}
         <div class="flex items-center space-x-4 ml-auto flex-shrink-0">
+          {onToggleLang && (
+            <button
+              class="font-mono text-xs border border-[var(--accent)] text-[var(--accent)] rounded px-2 py-1 hover:bg-[var(--accent)]/20 transition"
+              onClick={onToggleLang}
+              title={lang === "es" ? "Switch to English" : "Cambiar a Español"}
+            >
+              {lang === "es" ? "EN" : "ES"}
+            </button>
+          )}
           <button class="flex flex-col space-y-1" onClick={onMenuToggle}>
-            <span class="block w-6 h-[2px] bg-[var(--red-soft)]"></span>
-            <span class="block w-6 h-[2px] bg-[var(--red-soft)]"></span>
-            <span class="block w-6 h-[2px] bg-[var(--red-soft)]"></span>
+            <span class="block w-6 h-[2px] bg-[var(--accent-soft)]"></span>
+            <span class="block w-6 h-[2px] bg-[var(--accent-soft)]"></span>
+            <span class="block w-6 h-[2px] bg-[var(--accent-soft)]"></span>
           </button>
         </div>
       </nav>

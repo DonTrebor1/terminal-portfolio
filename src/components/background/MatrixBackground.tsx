@@ -76,9 +76,9 @@ export default function MatrixBackground() {
 
       /**
        * Estilo del texto.
-       * Se usa rojo (#ff0033) para mantener coherencia con el tema Red Team.
+       * Verde clásico estilo Matrix (#00ff41).
        */
-      ctx.fillStyle = "#ff0033";
+      ctx.fillStyle = "#00ff41";
       ctx.font = `${fontSize}px monospace`;
 
       /**

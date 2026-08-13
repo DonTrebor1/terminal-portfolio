@@ -1,316 +1,230 @@
 {
-  "title": "<span style=\"color:#fffd00\">Experiencia Profesional</span>",
-  "items": [
-    {
-      "id": "<span style=\\\"color:#3399ff\\\">[01]</span>",
-      "puesto": "Técnico Informático / Ciberseguridad (Autónomo)",
-      "inicio": "2025",
-      "fin": "Actualidad",
-      "empresa": "<span style=\"color:#ff3333\">Freelance</span>",
-      "ubicacion": "España",
-      "responsabilidades": [
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Diagnóstico y resolución de incidencias en equipos y sistemas (Windows/Linux)"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Soporte técnico a usuarios y pequeñas empresas (presencial y remoto)"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Buenas prácticas de seguridad: configuración segura y hardening básico"
-        }
-      ],
-      "logros": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Estructuré el proceso de diagnóstico (hipótesis → pruebas → solución) para reducir tiempos de resolución"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Documenté procedimientos y recomendaciones para prevenir incidencias repetidas"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Mejoré comunicación técnica con clientes, explicando problemas y soluciones de forma clara"
-        }
-      ],
-      "stackGroups": [
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Sistemas",
-          "items": [
-            "Windows",
-            "Linux"
-          ]
-        },
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Networking",
-          "items": [
-            "Wireshark",
-            "Nmap"
-          ]
-        },
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Entorno",
-          "items": [
-            "Kali Linux"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "<span style=\\\"color:#3399ff\\\">[02]</span>",
-      "puesto": "Prácticas de Desarrollo de Aplicaciones Web",
-      "inicio": "2024",
-      "fin": "2025",
-      "empresa": "<span style=\"color:#ff3333\">Social Labs</span>",
-      "ubicacion": "España",
-      "responsabilidades": [
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Apoyo en desarrollo y QA de una plataforma web"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Implementación de mejoras con PHP, HTML, CSS y JavaScript"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Gestión de incidencias y colaboración con el equipo usando herramientas de seguimiento"
-        }
-      ],
-      "logros": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Mejoré habilidades de debugging y análisis de errores en un entorno real"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Aprendí flujo de trabajo profesional con tareas, incidencias y control de cambios"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Fortalecí disciplina técnica trabajando con herramientas de equipo"
-        }
-      ],
-      "stackGroups": [
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Lenguajes",
-          "items": [
-            "PHP",
-            "JavaScript",
-            "SQL"
-          ]
-        },
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Frontend",
-          "items": [
-            "HTML",
-            "CSS"
-          ]
-        },
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Gestión",
-          "items": [
-            "Jira"
-          ]
-        },
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Control de versiones",
-          "items": [
-            "Git"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "<span style=\\\"color:#3399ff\\\">[03]</span>",
-      "puesto": "Conductor / Transporte de Muestras (Suplencias y Sustituciones)",
-      "inicio": "2022",
-      "fin": "Actualidad",
-      "empresa": "<span style=\"color:#ff3333\">Laboratorios Coll Garcés</span>",
-      "ubicacion": "Barcelona, España",
-      "responsabilidades": [
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Recogida de muestras en centros y laboratorios siguiendo rutas asignadas"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Entrega de muestras en base garantizando tiempos y trazabilidad del transporte"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Cumplimiento de procedimientos de higiene, seguridad y manipulación durante el traslado"
-        }
-      ],
-      "logros": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Alta fiabilidad y puntualidad en rutas críticas, manteniendo calidad del servicio"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Trabajo bajo presión y atención al detalle para evitar incidencias en el flujo de transporte"
-        }
-      ],
-      "stackGroups": [
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Competencias",
-          "items": [
-            "Responsabilidad",
-            "Puntualidad",
-            "Organización",
-            "Trabajo bajo presión",
-            "Atención al detalle"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "<span style=\\\"color:#3399ff\\\">[04]</span>",
-      "puesto": "Encargado de Almacén",
-      "inicio": "2019",
-      "fin": "2022",
-      "empresa": "<span style=\"color:#ff3333\">Korflex Relax</span>",
-      "ubicacion": "España",
-      "responsabilidades": [
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Supervisión operativa y coordinación de tareas diarias"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Gestión de inventario, organización y control de procesos"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Resolución de incidencias y mejora del flujo de trabajo bajo presión"
-        }
-      ],
-      "logros": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Desarrollé organización, priorización y disciplina operativa"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Refuerzo de habilidades transferibles: responsabilidad, comunicación y resolución de problemas"
-        }
-      ],
-      "stackGroups": [
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Habilidades",
-          "items": [
-            "Organización",
-            "Responsabilidad",
-            "Gestión del tiempo",
-            "Trabajo en equipo"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "<span style=\\\"color:#3399ff\\\">[05]</span>",
-      "puesto": "Administración y Gerencia de Entidad (AECS)",
-      "inicio": "2006",
-      "fin": "2019",
-      "empresa": "<span style=\"color:#ff3333\">AECS</span>",
-      "ubicacion": "España",
-      "responsabilidades": [
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Gestión administrativa y operativa de la entidad"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Coordinación de personas, planificación y organización de actividades"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Gestión de recursos y resolución de incidencias internas"
-        },
-        {
-          "icon": "[→]",
-          "color": "orange",
-          "text": "Toma de decisiones y mejora de procesos para asegurar continuidad"
-        }
-      ],
-      "logros": [
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Consolidé habilidades de liderazgo, responsabilidad y gestión a largo plazo"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Mejoré eficiencia organizativa mediante planificación y optimización de procesos"
-        },
-        {
-          "icon": "[+]",
-          "color": "green",
-          "text": "Fortalecí comunicación y gestión de situaciones complejas (transferible a entornos IT)"
-        }
-      ],
-      "stackGroups": [
-        {
-          "icon": "[★]",
-          "color": "yellow",
-          "title": "Competencias",
-          "items": [
-            "Gestión",
-            "Planificación",
-            "Liderazgo",
-            "Comunicación",
-            "Resolución de problemas"
-          ]
-        }
-      ]
-    }
-  ]
+  "es": {
+    "title": "<span style=\"color:#fffd00\">Experiencia Profesional</span>",
+    "items": [
+      {
+        "id": "<span style=\"color:#3399ff\">[01]</span>",
+        "puesto": "Técnico Informático / Ciberseguridad (Autónomo)",
+        "inicio": "2025",
+        "fin": "Actualidad",
+        "empresa": "<span style=\"color:#ff3333\">Freelance</span>",
+        "ubicacion": "España",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Diagnóstico y resolución de incidencias en equipos y sistemas (Windows/Linux)" },
+          { "icon": "[→]", "color": "orange", "text": "Soporte técnico a usuarios y pequeñas empresas (presencial y remoto)" },
+          { "icon": "[→]", "color": "orange", "text": "Buenas prácticas de seguridad: configuración segura y hardening básico" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "Estructuré el proceso de diagnóstico (hipótesis → pruebas → solución) para reducir tiempos de resolución" },
+          { "icon": "[+]", "color": "green", "text": "Documenté procedimientos y recomendaciones para prevenir incidencias repetidas" },
+          { "icon": "[+]", "color": "green", "text": "Mejoré comunicación técnica con clientes, explicando problemas y soluciones de forma clara" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Sistemas", "items": ["Windows", "Linux"] },
+          { "icon": "[★]", "color": "yellow", "title": "Networking", "items": ["Wireshark", "Nmap"] },
+          { "icon": "[★]", "color": "yellow", "title": "Entorno", "items": ["Kali Linux"] }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[02]</span>",
+        "puesto": "Prácticas de Desarrollo de Aplicaciones Web",
+        "inicio": "2024",
+        "fin": "2025",
+        "empresa": "<span style=\"color:#ff3333\">Social Labs</span>",
+        "ubicacion": "España",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Apoyo en desarrollo y QA de una plataforma web" },
+          { "icon": "[→]", "color": "orange", "text": "Implementación de mejoras con PHP, HTML, CSS y JavaScript" },
+          { "icon": "[→]", "color": "orange", "text": "Gestión de incidencias y colaboración con el equipo usando herramientas de seguimiento" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "Mejoré habilidades de debugging y análisis de errores en un entorno real" },
+          { "icon": "[+]", "color": "green", "text": "Aprendí flujo de trabajo profesional con tareas, incidencias y control de cambios" },
+          { "icon": "[+]", "color": "green", "text": "Fortalecí disciplina técnica trabajando con herramientas de equipo" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Lenguajes", "items": ["PHP", "JavaScript", "SQL"] },
+          { "icon": "[★]", "color": "yellow", "title": "Frontend", "items": ["HTML", "CSS"] },
+          { "icon": "[★]", "color": "yellow", "title": "Gestión", "items": ["Jira"] },
+          { "icon": "[★]", "color": "yellow", "title": "Control de versiones", "items": ["Git"] }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[03]</span>",
+        "puesto": "Conductor / Transporte de Muestras (Suplencias y Sustituciones)",
+        "inicio": "2022",
+        "fin": "Actualidad",
+        "empresa": "<span style=\"color:#ff3333\">Laboratorios Coll Garcés</span>",
+        "ubicacion": "Barcelona, España",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Recogida de muestras en centros y laboratorios siguiendo rutas asignadas" },
+          { "icon": "[→]", "color": "orange", "text": "Entrega de muestras en base garantizando tiempos y trazabilidad del transporte" },
+          { "icon": "[→]", "color": "orange", "text": "Cumplimiento de procedimientos de higiene, seguridad y manipulación durante el traslado" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "Alta fiabilidad y puntualidad en rutas críticas, manteniendo calidad del servicio" },
+          { "icon": "[+]", "color": "green", "text": "Trabajo bajo presión y atención al detalle para evitar incidencias en el flujo de transporte" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Competencias", "items": ["Responsabilidad", "Puntualidad", "Organización", "Trabajo bajo presión", "Atención al detalle"] }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[04]</span>",
+        "puesto": "Encargado de Almacén",
+        "inicio": "2019",
+        "fin": "2022",
+        "empresa": "<span style=\"color:#ff3333\">Korflex Relax</span>",
+        "ubicacion": "España",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Supervisión operativa y coordinación de tareas diarias" },
+          { "icon": "[→]", "color": "orange", "text": "Gestión de inventario, organización y control de procesos" },
+          { "icon": "[→]", "color": "orange", "text": "Resolución de incidencias y mejora del flujo de trabajo bajo presión" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "Desarrollé organización, priorización y disciplina operativa" },
+          { "icon": "[+]", "color": "green", "text": "Refuerzo de habilidades transferibles: responsabilidad, comunicación y resolución de problemas" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Habilidades", "items": ["Organización", "Responsabilidad", "Gestión del tiempo", "Trabajo en equipo"] }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[05]</span>",
+        "puesto": "Administración y Gerencia de Entidad (AECS)",
+        "inicio": "2006",
+        "fin": "2019",
+        "empresa": "<span style=\"color:#ff3333\">AECS</span>",
+        "ubicacion": "España",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Gestión administrativa y operativa de la entidad" },
+          { "icon": "[→]", "color": "orange", "text": "Coordinación de personas, planificación y organización de actividades" },
+          { "icon": "[→]", "color": "orange", "text": "Gestión de recursos y resolución de incidencias internas" },
+          { "icon": "[→]", "color": "orange", "text": "Toma de decisiones y mejora de procesos para asegurar continuidad" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "Consolidé habilidades de liderazgo, responsabilidad y gestión a largo plazo" },
+          { "icon": "[+]", "color": "green", "text": "Mejoré eficiencia organizativa mediante planificación y optimización de procesos" },
+          { "icon": "[+]", "color": "green", "text": "Fortalecí comunicación y gestión de situaciones complejas (transferible a entornos IT)" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Competencias", "items": ["Gestión", "Planificación", "Liderazgo", "Comunicación", "Resolución de problemas"] }
+        ]
+      }
+    ]
+  },
+  "en": {
+    "title": "<span style=\"color:#fffd00\">Professional Experience</span>",
+    "items": [
+      {
+        "id": "<span style=\"color:#3399ff\">[01]</span>",
+        "puesto": "IT Technician / Cybersecurity (Freelance)",
+        "inicio": "2025",
+        "fin": "Present",
+        "empresa": "<span style=\"color:#ff3333\">Freelance</span>",
+        "ubicacion": "Spain",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Diagnosis and resolution of issues on devices and systems (Windows/Linux)" },
+          { "icon": "[→]", "color": "orange", "text": "Technical support for users and small businesses (on-site and remote)" },
+          { "icon": "[→]", "color": "orange", "text": "Security best practices: secure configuration and basic hardening" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "Structured the diagnostic process (hypothesis → testing → solution) to reduce resolution times" },
+          { "icon": "[+]", "color": "green", "text": "Documented procedures and recommendations to prevent recurring issues" },
+          { "icon": "[+]", "color": "green", "text": "Improved technical communication with clients, explaining problems and solutions clearly" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Systems", "items": ["Windows", "Linux"] },
+          { "icon": "[★]", "color": "yellow", "title": "Networking", "items": ["Wireshark", "Nmap"] },
+          { "icon": "[★]", "color": "yellow", "title": "Environment", "items": ["Kali Linux"] }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[02]</span>",
+        "puesto": "Web Application Development Internship",
+        "inicio": "2024",
+        "fin": "2025",
+        "empresa": "<span style=\"color:#ff3333\">Social Labs</span>",
+        "ubicacion": "Spain",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Support in development and QA of a web platform" },
+          { "icon": "[→]", "color": "orange", "text": "Implementation of improvements with PHP, HTML, CSS and JavaScript" },
+          { "icon": "[→]", "color": "orange", "text": "Issue tracking and team collaboration using tracking tools" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "Improved debugging and error analysis skills in a real environment" },
+          { "icon": "[+]", "color": "green", "text": "Learned professional workflow with tasks, issues, and change control" },
+          { "icon": "[+]", "color": "green", "text": "Strengthened technical discipline working with team tools" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Languages", "items": ["PHP", "JavaScript", "SQL"] },
+          { "icon": "[★]", "color": "yellow", "title": "Frontend", "items": ["HTML", "CSS"] },
+          { "icon": "[★]", "color": "yellow", "title": "Management", "items": ["Jira"] },
+          { "icon": "[★]", "color": "yellow", "title": "Version control", "items": ["Git"] }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[03]</span>",
+        "puesto": "Driver / Sample Transport (Temporary Cover)",
+        "inicio": "2022",
+        "fin": "Present",
+        "empresa": "<span style=\"color:#ff3333\">Laboratorios Coll Garcés</span>",
+        "ubicacion": "Barcelona, Spain",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Sample pickup at centers and laboratories following assigned routes" },
+          { "icon": "[→]", "color": "orange", "text": "Sample delivery to base, ensuring transport timing and traceability" },
+          { "icon": "[→]", "color": "orange", "text": "Compliance with hygiene, safety, and handling procedures during transport" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "High reliability and punctuality on critical routes, maintaining service quality" },
+          { "icon": "[+]", "color": "green", "text": "Worked under pressure with attention to detail to avoid transport disruptions" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Skills", "items": ["Responsibility", "Punctuality", "Organization", "Working under pressure", "Attention to detail"] }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[04]</span>",
+        "puesto": "Warehouse Supervisor",
+        "inicio": "2019",
+        "fin": "2022",
+        "empresa": "<span style=\"color:#ff3333\">Korflex Relax</span>",
+        "ubicacion": "Spain",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Operational oversight and coordination of daily tasks" },
+          { "icon": "[→]", "color": "orange", "text": "Inventory management, organization, and process control" },
+          { "icon": "[→]", "color": "orange", "text": "Issue resolution and workflow improvement under pressure" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "Developed organization, prioritization, and operational discipline" },
+          { "icon": "[+]", "color": "green", "text": "Reinforced transferable skills: responsibility, communication, and problem-solving" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Skills", "items": ["Organization", "Responsibility", "Time management", "Teamwork"] }
+        ]
+      },
+      {
+        "id": "<span style=\"color:#3399ff\">[05]</span>",
+        "puesto": "Administration & Management (AECS)",
+        "inicio": "2006",
+        "fin": "2019",
+        "empresa": "<span style=\"color:#ff3333\">AECS</span>",
+        "ubicacion": "Spain",
+        "responsabilidades": [
+          { "icon": "[→]", "color": "orange", "text": "Administrative and operational management of the entity" },
+          { "icon": "[→]", "color": "orange", "text": "Team coordination, planning, and organization of activities" },
+          { "icon": "[→]", "color": "orange", "text": "Resource management and resolution of internal issues" },
+          { "icon": "[→]", "color": "orange", "text": "Decision-making and process improvement to ensure continuity" }
+        ],
+        "logros": [
+          { "icon": "[+]", "color": "green", "text": "Consolidated long-term leadership, responsibility, and management skills" },
+          { "icon": "[+]", "color": "green", "text": "Improved organizational efficiency through planning and process optimization" },
+          { "icon": "[+]", "color": "green", "text": "Strengthened communication and management of complex situations (transferable to IT environments)" }
+        ],
+        "stackGroups": [
+          { "icon": "[★]", "color": "yellow", "title": "Skills", "items": ["Management", "Planning", "Leadership", "Communication", "Problem-solving"] }
+        ]
+      }
+    ]
+  }
 }

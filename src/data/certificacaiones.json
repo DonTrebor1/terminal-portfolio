@@ -1,120 +1,300 @@
 {
-  "title": "<span style=\"color:#fffd00\">Certificaciones</span>",
-  "obtenidas": [
-
-    {
-      "icon": "[+]",
-      "color": "green",
-      "nombre": "Introduction to Cybersecurity — Cisco Networking Academy",
-      "anio": "2025",
-      "id": "",
-      "url": "https://www.credly.com/badges/f8d714b9-d550-4f5f-9f88-68c09aacff80",
-      "detalles": [
-        "Fundamentos de ciberseguridad y defensa de sistemas",
-        "Detección de amenazas y vectores de ataque",
-        "Conceptos esenciales de protección de redes"
-      ]
-    },
-
-    {
-      "icon": "[+]",
-      "color": "green",
-      "nombre": "Respuesta a Incidentes de Ciberseguridad — Dabo Consulting",
-      "anio": "2025",
-      "id": "",
-      "url": "",
-      "detalles": [
-        "Curso profesional subvencionado por el SEPE y fondos europeos",
-        "Detección y gestión de incidentes de seguridad",
-        "Análisis de logs e identificación de amenazas",
-        "Primeros pasos en informática forense",
-        "Evaluación de vulnerabilidades y análisis de malware"
-      ]
-    },
-
-    {
-      "icon": "[+]",
-      "color": "green",
-      "nombre": "Introduction to Packet Tracer — Cisco Networking Academy",
-      "anio": "2025",
-      "id": "",
-      "url": "https://www.credly.com/badges/18dcd459-0db4-4b2b-90f2-74a3905850ad",
-      "detalles": [
-        "Simulación de infraestructuras de red",
-        "Configuración básica de dispositivos",
-        "Comprensión del funcionamiento de redes"
-      ]
-    },
-
-    {
-      "icon": "[+]",
-      "color": "green",
-      "nombre": "ACTIC Nivel Medio (Nivel 2) — Generalitat de Catalunya",
-      "anio": "2024",
-      "id": "",
-      "url": "",
-      "detalles": [
-        "Acreditación oficial de competencias digitales",
-        "Productividad y entorno tecnológico profesional",
-        "Comunicación y gestión de información digital"
-      ]
-    },
-
-    {
-      "icon": "[+]",
-      "color": "green",
-      "nombre": "Google IA y Productividad — Santander Open Academy",
-      "anio": "2025",
-      "id": "OA-2025-0527001164894",
-      "url": "",
-      "detalles": [
-        "Aplicación de IA para mejorar productividad",
-        "Automatización de tareas mediante herramientas inteligentes"
-      ]
-    },
-
-    {
-      "icon": "[+]",
-      "color": "green",
-      "nombre": "Iniciación al Desarrollo con IA — BIG School",
-      "anio": "2025",
-      "id": "",
-      "url": "",
-      "detalles": [
-        "Fundamentos del desarrollo de software apoyado en IA",
-        "Uso de Firebase",
-        "Integración de servicios inteligentes en aplicaciones"
-      ]
-    }
-
-  ],
-"enPreparacion": [
-  {
-    "icon": "[~]",
-    "color": "yellow",
-    "nombre": "eJPTv2 — Junior Penetration Tester (INE Security)",
-    "anio": "2026",
-    "id": "",
-    "url": "",
-    "detalles": [
-      "Certificación práctica altamente reconocida en ciberseguridad",
-      "Pentesting realista en entornos de laboratorio",
-      "Enumeración, explotación y post-explotación"
+  "es": {
+    "title": "<span style=\"color:#fffd00\">Certificaciones</span>",
+    "obtenidas": [
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "eJPT — Junior Penetration Tester",
+        "anio": "Ago 2026", "id": "4fcbd5a8-e177-436d-980d-39d39ecf678d", "url": "",
+        "detalles": [
+          "Certificación práctica de pentesting junior (INE Security)",
+          "Enumeración, explotación y post-explotación en laboratorios reales",
+          "Reconocimiento y explotación de redes y sistemas Windows/Linux"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "NIS2 DTP — Cyber Risk GmbH",
+        "anio": "Ago 2026", "id": "", "url": "",
+        "detalles": [
+          "Formación sobre la Directiva NIS2 y su cumplimiento normativo",
+          "Gestión de riesgos de ciberseguridad a nivel UE"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified ISO/IEC 42001:2023 Lead Auditor — CertiProf",
+        "anio": "Jun 2026", "id": "CLPPRBDQRSF-ZVZZHLQGT-XCWPTTPXWX", "url": "",
+        "detalles": [
+          "Auditoría de sistemas de gestión de IA conforme a ISO/IEC 42001:2023",
+          "Liderazgo de auditorías de cumplimiento en gobernanza de IA",
+          "Válido hasta jun 2029"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified ISO 42001 AI Governance Fundamentals — CertiProf",
+        "anio": "Jun 2026", "id": "115413001", "url": "",
+        "detalles": [
+          "Fundamentos de gobernanza de sistemas de IA según ISO/IEC 42001",
+          "Gestión de riesgos y cumplimiento normativo en IA",
+          "Válido hasta jun 2027"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified Ethical Hacking Professional Certification (CEHPC) — CertiProf",
+        "anio": "Jun 2026", "id": "FLLLTPJTPDL-RGRRQSQGR-WQTDBNBQNN", "url": "",
+        "detalles": [
+          "Hacking ético profesional y metodologías de pentesting",
+          "Red Team y técnicas de seguridad ofensiva",
+          "Válido hasta jun 2029"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified ISO/IEC 27001:2022 Lead Auditor — CertiProf",
+        "anio": "Jun 2026", "id": "TLZZLHVGZGV-XPXWRTWTW-RLKTTRFJTF", "url": "",
+        "detalles": [
+          "Auditoría de Sistemas de Gestión de Seguridad de la Información (SGSI)",
+          "ISO 27001 y cumplimiento de la normativa",
+          "Válido hasta jun 2029"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified ISO/IEC 27001:2022 Lead Implementer — CertiProf",
+        "anio": "Jun 2026", "id": "FLLLTQDJCDJ-RGRKHJFGF-WQTDZDNFBF", "url": "",
+        "detalles": [
+          "Implementación de Sistemas de Gestión de Seguridad de la Información (SGSI)",
+          "ISO/IEC 27001:2022",
+          "Válido hasta jun 2029"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Hacker X — Ethical Hacking & Cybersecurity",
+        "anio": "Mar 2026", "id": "4eaa8194f9772c8", "url": "",
+        "detalles": [
+          "Hacking ético y ciberseguridad ofensiva",
+          "Red Team"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Respuesta a Incidentes de Ciberseguridad — Dabo Consulting",
+        "anio": "2025", "id": "", "url": "",
+        "detalles": [
+          "Curso profesional subvencionado por el SEPE y fondos europeos",
+          "Detección y gestión de incidentes de seguridad",
+          "Análisis de logs e identificación de amenazas",
+          "Primeros pasos en informática forense",
+          "Evaluación de vulnerabilidades y análisis de malware"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Google IA y Productividad — Santander Open Academy",
+        "anio": "May 2025", "id": "OA-2025-0527001164894", "url": "",
+        "detalles": [
+          "Aplicación de IA para mejorar productividad",
+          "Automatización de tareas mediante herramientas inteligentes"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Iniciación al Desarrollo con IA — BIG School",
+        "anio": "Oct 2025", "id": "", "url": "",
+        "detalles": [
+          "Fundamentos del desarrollo de software apoyado en IA",
+          "Uso de Firebase",
+          "Integración de servicios inteligentes en aplicaciones"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Introduction to Packet Tracer — Cisco Networking Academy",
+        "anio": "Abr 2025", "id": "", "url": "https://www.credly.com/badges/18dcd459-0db4-4b2b-90f2-74a3905850ad",
+        "detalles": [
+          "Simulación de infraestructuras de red",
+          "Configuración básica de dispositivos",
+          "Comprensión del funcionamiento de redes"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Introduction to Cybersecurity — Cisco Networking Academy",
+        "anio": "Abr 2025", "id": "", "url": "https://www.credly.com/badges/f8d714b9-d550-4f5f-9f88-68c09aacff80",
+        "detalles": [
+          "Fundamentos de ciberseguridad y defensa de sistemas",
+          "Detección de amenazas y vectores de ataque",
+          "Conceptos esenciales de protección de redes"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "ACTIC Nivel Medio (Nivel 2) — Generalitat de Catalunya",
+        "anio": "2024", "id": "", "url": "",
+        "detalles": [
+          "Acreditación oficial de competencias digitales",
+          "Productividad y entorno tecnológico profesional",
+          "Comunicación y gestión de información digital"
+        ]
+      }
+    ],
+    "enPreparacion": [],
+    "objetivos": [
+      { "icon": "[↑]", "color": "red", "nombre": "eWPT — Web Application Penetration Tester" },
+      { "icon": "[↑]", "color": "red", "nombre": "CRTP — Certified Red Team Professional" }
+    ]
+  },
+  "en": {
+    "title": "<span style=\"color:#fffd00\">Certifications</span>",
+    "obtenidas": [
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "eJPT — Junior Penetration Tester",
+        "anio": "Aug 2026", "id": "4fcbd5a8-e177-436d-980d-39d39ecf678d", "url": "",
+        "detalles": [
+          "Hands-on junior penetration testing certification (INE Security)",
+          "Enumeration, exploitation and post-exploitation in real labs",
+          "Reconnaissance and exploitation of Windows/Linux networks and systems"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "NIS2 DTP — Cyber Risk GmbH",
+        "anio": "Aug 2026", "id": "", "url": "",
+        "detalles": [
+          "Training on the NIS2 Directive and regulatory compliance",
+          "EU-level cybersecurity risk management"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified ISO/IEC 42001:2023 Lead Auditor — CertiProf",
+        "anio": "Jun 2026", "id": "CLPPRBDQRSF-ZVZZHLQGT-XCWPTTPXWX", "url": "",
+        "detalles": [
+          "Auditing of AI management systems under ISO/IEC 42001:2023",
+          "Leading compliance audits in AI governance",
+          "Valid until Jun 2029"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified ISO 42001 AI Governance Fundamentals — CertiProf",
+        "anio": "Jun 2026", "id": "115413001", "url": "",
+        "detalles": [
+          "Fundamentals of AI system governance under ISO/IEC 42001",
+          "AI risk management and regulatory compliance",
+          "Valid until Jun 2027"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified Ethical Hacking Professional Certification (CEHPC) — CertiProf",
+        "anio": "Jun 2026", "id": "FLLLTPJTPDL-RGRRQSQGR-WQTDBNBQNN", "url": "",
+        "detalles": [
+          "Professional ethical hacking and pentesting methodologies",
+          "Red Team and offensive security techniques",
+          "Valid until Jun 2029"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified ISO/IEC 27001:2022 Lead Auditor — CertiProf",
+        "anio": "Jun 2026", "id": "TLZZLHVGZGV-XPXWRTWTW-RLKTTRFJTF", "url": "",
+        "detalles": [
+          "Auditing of Information Security Management Systems (ISMS)",
+          "ISO 27001 and regulatory compliance",
+          "Valid until Jun 2029"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Certified ISO/IEC 27001:2022 Lead Implementer — CertiProf",
+        "anio": "Jun 2026", "id": "FLLLTQDJCDJ-RGRKHJFGF-WQTDZDNFBF", "url": "",
+        "detalles": [
+          "Implementation of Information Security Management Systems (ISMS)",
+          "ISO/IEC 27001:2022",
+          "Valid until Jun 2029"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Hacker X — Ethical Hacking & Cybersecurity",
+        "anio": "Mar 2026", "id": "4eaa8194f9772c8", "url": "",
+        "detalles": [
+          "Ethical hacking and offensive cybersecurity",
+          "Red Team"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Cybersecurity Incident Response — Dabo Consulting",
+        "anio": "2025", "id": "", "url": "",
+        "detalles": [
+          "Professional course subsidized by SEPE and EU funds",
+          "Security incident detection and management",
+          "Log analysis and threat identification",
+          "First steps in digital forensics",
+          "Vulnerability assessment and malware analysis"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Google: AI and Productivity — Santander Open Academy",
+        "anio": "May 2025", "id": "OA-2025-0527001164894", "url": "",
+        "detalles": [
+          "Applying AI to improve productivity",
+          "Task automation using intelligent tools"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Introduction to AI Development — BIG School",
+        "anio": "Oct 2025", "id": "", "url": "",
+        "detalles": [
+          "Fundamentals of AI-assisted software development",
+          "Using Firebase",
+          "Integrating intelligent services into applications"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Introduction to Packet Tracer — Cisco Networking Academy",
+        "anio": "Apr 2025", "id": "", "url": "https://www.credly.com/badges/18dcd459-0db4-4b2b-90f2-74a3905850ad",
+        "detalles": [
+          "Network infrastructure simulation",
+          "Basic device configuration",
+          "Understanding of network operation"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "Introduction to Cybersecurity — Cisco Networking Academy",
+        "anio": "Apr 2025", "id": "", "url": "https://www.credly.com/badges/f8d714b9-d550-4f5f-9f88-68c09aacff80",
+        "detalles": [
+          "Cybersecurity fundamentals and system defense",
+          "Threat detection and attack vectors",
+          "Essential network protection concepts"
+        ]
+      },
+      {
+        "icon": "[+]", "color": "green",
+        "nombre": "ACTIC Intermediate Level (Level 2) — Generalitat de Catalunya",
+        "anio": "2024", "id": "", "url": "",
+        "detalles": [
+          "Official accreditation of digital competencies",
+          "Productivity and professional technology environment",
+          "Digital communication and information management"
+        ]
+      }
+    ],
+    "enPreparacion": [],
+    "objetivos": [
+      { "icon": "[↑]", "color": "red", "nombre": "eWPT — Web Application Penetration Tester" },
+      { "icon": "[↑]", "color": "red", "nombre": "CRTP — Certified Red Team Professional" }
     ]
   }
-],
-
-
-  "objetivos": [
-    {
-      "icon": "[↑]",
-      "color": "red",
-      "nombre": "eWPT — Web Application Penetration Tester"
-    },
-    {
-      "icon": "[↑]",
-      "color": "red",
-      "nombre": "CRTP — Certified Red Team Professional"
-    }
-  ]
 }

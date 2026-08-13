@@ -1,13 +1,28 @@
 {
-  "title": "<span style=\"color:#fffd00\">Contacto</span>",
-  "items": [
-    { "icon": "[+]", "color": "green", "label": "Email", "value": "robertbp90@gmail.com" },
-    { "icon": "[+]", "color": "green", "label": "LinkedIn", "value": "https://www.linkedin.com/in/robert-bou-poveda-919295248" },
-    { "icon": "[+]", "color": "green", "label": "GitHub", "value": "https://github.com/DonTrebor1" },
-    { "icon": "[+]", "color": "green", "label": "Ubicación", "value": "Barcelona, España" }
-  ],
-  "disponibilidad": [
-    { "icon": "[+]", "color": "blue", "text": "Disponible para trabajo remoto y presencial" },
-    { "icon": "[+]", "color": "blue", "text": "Zona horaria: CET (UTC+1)" }
-  ]
+  "es": {
+    "title": "<span style=\"color:#fffd00\">Contacto</span>",
+    "items": [
+      { "icon": "[+]", "color": "green", "label": "Email", "value": "robertbp90@gmail.com" },
+      { "icon": "[+]", "color": "green", "label": "LinkedIn", "value": "https://www.linkedin.com/in/robert-bou-poveda-919295248" },
+      { "icon": "[+]", "color": "green", "label": "GitHub", "value": "https://github.com/DonTrebor1" },
+      { "icon": "[+]", "color": "green", "label": "Ubicación", "value": "Barcelona, España" }
+    ],
+    "disponibilidad": [
+      { "icon": "[+]", "color": "blue", "text": "Disponible para trabajo remoto y presencial" },
+      { "icon": "[+]", "color": "blue", "text": "Zona horaria: CET (UTC+1)" }
+    ]
+  },
+  "en": {
+    "title": "<span style=\"color:#fffd00\">Contact</span>",
+    "items": [
+      { "icon": "[+]", "color": "green", "label": "Email", "value": "robertbp90@gmail.com" },
+      { "icon": "[+]", "color": "green", "label": "LinkedIn", "value": "https://www.linkedin.com/in/robert-bou-poveda-919295248" },
+      { "icon": "[+]", "color": "green", "label": "GitHub", "value": "https://github.com/DonTrebor1" },
+      { "icon": "[+]", "color": "green", "label": "Location", "value": "Barcelona, Spain" }
+    ],
+    "disponibilidad": [
+      { "icon": "[+]", "color": "blue", "text": "Available for remote and on-site work" },
+      { "icon": "[+]", "color": "blue", "text": "Timezone: CET (UTC+1)" }
+    ]
+  }
 }

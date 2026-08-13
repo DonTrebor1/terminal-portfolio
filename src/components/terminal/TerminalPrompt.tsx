@@ -36,10 +36,10 @@ export default function TerminalPrompt({
        * Se usan spans con colores para mantener coherencia visual 
        * con el resto del portfolio (tema Red Team). 
        */}
-      <div class="text-[var(--red-accent)]">
+      <div class="text-[var(--accent)]">
         ┌──(
         <span class="text-[var(--white-soft)]">kali</span>
-        <span class="text-[var(--red-soft)]">㉿</span>
+        <span class="text-[var(--accent-soft)]">㉿</span>
         <span class="text-[var(--white-soft)]">portfolio</span>
         )-[<span class="text-[var(--white-soft)]">~</span>]
       </div>
@@ -54,7 +54,7 @@ export default function TerminalPrompt({
  * Esto mantiene sincronía visual con la animación de useTerminal().
 */}
       <div class="flex items-center">
-        <span class="text-[var(--red-accent)]">└─$</span>
+        <span class="text-[var(--accent)]">└─$</span>
 
         {/** 
          * Si existe un comando (durante animación o después), 
@@ -85,7 +85,7 @@ export default function TerminalPrompt({
          * La clase "cursor-blink" está definida en CSS global.
          */}
         {!command && (
-          <span class="ml-2 cursor-blink text-[var(--red-soft)]">█</span>
+          <span class="ml-2 cursor-blink text-[var(--accent-soft)]">█</span>
         )}
       </div>
     </div>

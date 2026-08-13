@@ -15,7 +15,31 @@
 
 import { useEffect, useState } from "preact/hooks";
 
-export default function LoginPanel({ onLogin }: { onLogin: () => void }) {
+const LABELS = {
+  es: {
+    title: "PORTFOLIO DE ROBERT",
+    subtitle: "Acceso restringido - Autenticación requerida",
+    user: "Usuario:",
+    pass: "Contraseña:",
+    submit: "[INICIAR SESIÓN]",
+  },
+  en: {
+    title: "ROBERT'S PORTFOLIO",
+    subtitle: "Restricted access - Authentication required",
+    user: "User:",
+    pass: "Password:",
+    submit: "[LOG IN]",
+  },
+};
+
+export default function LoginPanel({
+  onLogin,
+  lang = "es",
+}: {
+  onLogin: () => void;
+  lang?: "es" | "en";
+}) {
+  const t = LABELS[lang];
   /**
    * Estados locales que almacenan el texto animado.
    * Se actualizan carácter por carácter para simular escritura humana.
@@ -97,14 +121,14 @@ export default function LoginPanel({ onLogin }: { onLogin: () => void }) {
        *  - Prompt root@portfolio
        *  - Bordes rojos para mantener coherencia con el tema Red Team
        */}
-      <div class="bg-black border-2 border-red-600 rounded-t-lg p-3 flex items-center space-x-2 border-top-red">
+      <div class="bg-black border-2 border-[var(--accent)] rounded-t-lg p-3 flex items-center space-x-2 border-top-accent">
         <div class="flex space-x-2">
           <div class="w-3 h-3 rounded-full bg-red-600"></div>
           <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
           <div class="w-3 h-3 rounded-full bg-green-500"></div>
         </div>
 
-        <span class="text-[var(--red-accent)] font-mono text-sm flex-1 text-center">
+        <span class="text-[var(--accent)] font-mono text-sm flex-1 text-center">
           root@portfolio:~$
         </span>
       </div>
@@ -121,16 +145,16 @@ export default function LoginPanel({ onLogin }: { onLogin: () => void }) {
        *  - Los inputs son readOnly porque la animación es automática
        *  - El botón permite a usuarios impacientes avanzar rápido
        */}
-      <div class="panel-bg border-2 border-t-0 border-red-600 rounded-b-lg p-8 shadow-xl shadow-red-600/20 backdrop-blur-sm">
+      <div class="panel-bg border-2 border-t-0 border-[var(--accent)] rounded-b-lg p-8 shadow-xl shadow-[var(--accent)]/20 backdrop-blur-sm">
 
         {/* Título y subtítulo */}
         <div class="mb-8">
-          <h1 class="text-3xl font-mono font-bold text-[var(--red-accent)] mb-2 flex items-center">
-            <span class="text-[var(--red-soft)] mr-2">&gt;</span>PORTFOLIO DE ROBERT
+          <h1 class="text-3xl font-mono font-bold text-[var(--accent)] mb-2 flex items-center">
+            <span class="text-[var(--accent-soft)] mr-2">&gt;</span>{t.title}
           </h1>
 
           <p class="text-[var(--gray-terminal)] font-mono text-sm">
-            <span class="text-[var(--red-soft)]">[-]</span> Acceso restringido - Autenticación requerida
+            <span class="text-[var(--accent-soft)]">[-]</span> {t.subtitle}
           </p>
         </div>
 
@@ -140,12 +164,12 @@ export default function LoginPanel({ onLogin }: { onLogin: () => void }) {
           {/* Usuario */}
           <div>
             <label class="block text-[var(--gray-terminal)] font-mono text-sm mb-2">
-              <span class="text-[var(--red-soft)]">&gt;</span> Usuario:
+              <span class="text-[var(--accent-soft)]">&gt;</span> {t.user}
             </label>
 
             <input
               type="text"
-              class="w-full bg-[#0a0a0a] border border-gray-700 rounded px-4 py-3 text-[var(--white-soft)] font-mono focus:outline-none focus:border-[var(--red-accent)] transition-all"
+              class="w-full bg-[#0a0a0a] border border-gray-700 rounded px-4 py-3 text-[var(--white-soft)] font-mono focus:outline-none focus:border-[var(--accent)] transition-all"
               value={userText}
               readOnly
             />
@@ -154,12 +178,12 @@ export default function LoginPanel({ onLogin }: { onLogin: () => void }) {
           {/* Contraseña */}
           <div>
             <label class="block text-[var(--gray-terminal)] font-mono text-sm mb-2">
-              <span class="text-[var(--red-soft)]">&gt;</span> Contraseña:
+              <span class="text-[var(--accent-soft)]">&gt;</span> {t.pass}
             </label>
 
             <input
               type="password"
-              class="w-full bg-[#0a0a0a] border border-gray-700 rounded px-4 py-3 text-[var(--white-soft)] font-mono focus:outline-none focus:border-[var(--red-accent)] transition-all"
+              class="w-full bg-[#0a0a0a] border border-gray-700 rounded px-4 py-3 text-[var(--white-soft)] font-mono focus:outline-none focus:border-[var(--accent)] transition-all"
               value={passText}
               readOnly
             />
@@ -169,9 +193,9 @@ export default function LoginPanel({ onLogin }: { onLogin: () => void }) {
           <button
             type="button"
             onClick={onLogin}
-            class="w-full bg-[var(--red-accent)] hover:bg-[var(--red-soft)] text-black font-mono font-bold py-3 px-4 rounded border border-[var(--red-accent)] transition-all duration-200 glow-red"
+            class="w-full bg-[var(--accent)] hover:bg-[var(--accent-soft)] text-black font-mono font-bold py-3 px-4 rounded border border-[var(--accent)] transition-all duration-200 glow-accent"
           >
-            [INICIAR SESIÓN]
+            {t.submit}
           </button>
         </form>
       </div>

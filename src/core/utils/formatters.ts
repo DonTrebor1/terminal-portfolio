@@ -29,6 +29,45 @@
  *  - Los formateadores generan HTML dinámico
  *  - Tailwind no procesa clases generadas en tiempo de ejecución
  */
+type Lang = "es" | "en";
+
+const STRINGS: Record<Lang, Record<string, string>> = {
+  es: {
+    nombre: "Nombre",
+    rol: "Rol",
+    especializacion: "ESPECIALIZACIÓN",
+    objetivos: "OBJETIVOS",
+    obtenidas: "OBTENIDAS",
+    enCurso: "EN CURSO",
+    id: "ID",
+    url: "URL",
+    disponibilidad: "DISPONIBILIDAD",
+    centro: "Centro",
+    ubicacion: "Ubicación",
+    empresa: "Empresa",
+    responsabilidades: "Responsabilidades",
+    logros: "Logros",
+    stack: "Stack",
+  },
+  en: {
+    nombre: "Name",
+    rol: "Role",
+    especializacion: "SPECIALIZATION",
+    objetivos: "GOALS",
+    obtenidas: "OBTAINED",
+    enCurso: "IN PROGRESS",
+    id: "ID",
+    url: "URL",
+    disponibilidad: "AVAILABILITY",
+    centro: "School",
+    ubicacion: "Location",
+    empresa: "Company",
+    responsabilidades: "Responsibilities",
+    logros: "Achievements",
+    stack: "Stack",
+  },
+};
+
 function colorIcon(icon: string, color: string): string {
   const colors: any = {
     green: "#00ff00",
@@ -61,10 +100,11 @@ export function sectionSeparator() {
  * Este es el más simple: solo inserta valores del JSON.
  * Se permite HTML en name y role.
  */
-export function formatWhoami(data: any): string {
+export function formatWhoami(data: any, lang: Lang = "es"): string {
+  const s = STRINGS[lang];
   return `
-Nombre: ${data.name}
-Rol: ${data.role}
+${s.nombre}: ${data.name}
+${s.rol}: ${data.role}
 
 ${data.text}
 `;
@@ -78,7 +118,8 @@ ${data.text}
  * - Permite HTML en títulos y descripciones
  * - Mantiene estructura clara tipo "sección"
  */
-export function formatPerfil(data: any): string {
+export function formatPerfil(data: any, lang: Lang = "es"): string {
+  const s = STRINGS[lang];
   const specialization = data.specialization
     .map((item: any) => `${colorIcon(item.icon, item.color)} ${item.text}`)
     .join("\n");
@@ -92,10 +133,10 @@ export function formatPerfil(data: any): string {
 
 ${data.description}
 
-=== ESPECIALIZACIÓN ===
+=== ${s.especializacion} ===
 ${specialization}
 
-=== OBJETIVOS ===
+=== ${s.objetivos} ===
 ${goals}
 `;
 }
@@ -111,15 +152,16 @@ ${goals}
  * Importante:
  *  No se toca la indentación interna del template literal.
  */
-export function formatEstudios(data: any): string {
+export function formatEstudios(data: any, lang: Lang = "es"): string {
+  const s = STRINGS[lang];
   return `
 === ${data.title.toUpperCase()} ===
 ${data.items
     .map(
       (item: any) => `
 ${item.id} ${item.titulo} (${item.inicio} - ${item.fin})
-     • Centro: ${item.centro}
-     • Ubicación: ${item.ubicacion}
+     • ${s.centro}: ${item.centro}
+     • ${s.ubicacion}: ${item.ubicacion}
 ${item.temas
   .map(
     (t: any) =>
@@ -139,7 +181,8 @@ ${item.temas
  * - Similar a estudios, pero con responsabilidades, logros y stack
  * - Se respeta indentación manual para mantener estética CLI
  */
-export function formatExperiencia(data: any): string {
+export function formatExperiencia(data: any, lang: Lang = "es"): string {
+  const s = STRINGS[lang];
   return `
 === ${data.title.toUpperCase()} ===
 ${data.items
@@ -147,10 +190,10 @@ ${data.items
 
       return `
 ${item.id} ${item.puesto} (${item.inicio} - ${item.fin})
-     • Empresa: ${item.empresa}
-     • Ubicación: ${item.ubicacion}
+     • ${s.empresa}: ${item.empresa}
+     • ${s.ubicacion}: ${item.ubicacion}
 
-     • Responsabilidades:
+     • ${s.responsabilidades}:
 ${item.responsabilidades
   .map(
     (r: any) =>
@@ -158,7 +201,7 @@ ${item.responsabilidades
   )
   .join("\n")}
 
-     • Logros:
+     • ${s.logros}:
 ${item.logros
   .map(
     (l: any) =>
@@ -166,7 +209,7 @@ ${item.logros
   )
   .join("\n")}
 
-     • Stack:
+     • ${s.stack}:
 ${item.stackGroups
   .map(
     (group: any) =>
@@ -188,7 +231,7 @@ ${item.stackGroups
  * - Inserta iconos coloreados
  * - Mantiene estructura simple y clara
  */
-export function formatSkills(data: any): string {
+export function formatSkills(data: any, _lang: Lang = "es"): string {
   return `
 === ${data.title.toUpperCase()} ===
 ${data.categorias
@@ -215,7 +258,8 @@ ${cat.items
  * - Usa linkify para convertir URLs en enlaces clicables
  * - Mantiene indentación manual
  */
-export function formatCertificaciones(data: any): string {
+export function formatCertificaciones(data: any, lang: Lang = "es"): string {
+  const s = STRINGS[lang];
   const safeList = (v: any) => (Array.isArray(v) ? v : []);
   const safeStr = (v: any) => (typeof v === "string" ? v : "");
 
@@ -227,9 +271,9 @@ export function formatCertificaciones(data: any): string {
     const detalles = safeList(c?.detalles);
 
     return `     ${c?.icon ? colorIcon(c.icon, c.color) : "-"} ${nombre}${anio ? ` (${anio})` : ""}${
-      id ? `\n       ID: ${id}` : ""
+      id ? `\n       ${s.id}: ${id}` : ""
     }${url ? `
-       URL: <a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>` : ""}${
+       ${s.url}: <a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>` : ""}${
       detalles.length
         ? `\n${detalles.map((d: any) => `       - ${d}`).join("\n")}`
         : ""
@@ -239,13 +283,13 @@ export function formatCertificaciones(data: any): string {
   return `
 === ${safeStr(data?.title).toUpperCase()} ===
 
-• OBTENIDAS:
+• ${s.obtenidas}:
 ${safeList(data?.obtenidas).map(renderCert).join("\n\n") || "     -"}
 
-• EN CURSO:
+• ${s.enCurso}:
 ${safeList(data?.enPreparacion).map(renderCert).join("\n\n") || "     -"}
 
-• OBJETIVOS:
+• ${s.objetivos}:
 ${safeList(data?.objetivos)
   .map((o: any) => `     ${o?.icon ? colorIcon(o.icon, o.color) : "-"} ${safeStr(o?.nombre)}`)
   .join("\n") || "     -"}
@@ -271,7 +315,8 @@ ${safeList(data?.objetivos)
  * - Convierte URLs en enlaces
  * - Mantiene estructura clara por secciones
  */
-export function formatContacto(data: any): string {
+export function formatContacto(data: any, lang: Lang = "es"): string {
+  const s = STRINGS[lang];
   const safeList = (v: any) => (Array.isArray(v) ? v : []);
   const safeStr = (v: any) => (typeof v === "string" ? v : "");
 
@@ -305,7 +350,7 @@ export function formatContacto(data: any): string {
 
 ${items || "     -"}
 
-${disp ? "\n• DISPONIBILIDAD:\n" + disp : ""}
+${disp ? `\n• ${s.disponibilidad}:\n` + disp : ""}
 `;
 }
 

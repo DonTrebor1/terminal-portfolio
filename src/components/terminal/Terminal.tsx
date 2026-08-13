@@ -21,7 +21,8 @@ import TerminalHeader from "./TerminalHeader";
 import TerminalBody from "./TerminalBody";
 
 export default function Terminal({
-  terminal
+  terminal,
+  lang = "es",
 }: {
   terminal: {
     output: { type: "raw" | "html"; content: string }[]; // Historial de salida
@@ -31,6 +32,7 @@ export default function Terminal({
     runCommand: (cmd: string) => Promise<void>;          // Ejecuta comandos
     clear: () => void;                                   // Limpia la terminal
   };
+  lang?: "es" | "en";
 }) {
   return (
     /**
@@ -39,16 +41,16 @@ export default function Terminal({
      * Decisiones de diseño:
      *  - max-w-6xl → ancho óptimo para lectura
      *  - rounded-lg + shadow → estética de ventana real
-     *  - border-red-600 → coherencia con el tema Red Team
+     *  - border-[var(--accent)] → coherencia con el tema Red Team
      *  - backdrop-blur-sm → efecto de cristal oscuro
      */
-    <div class="w-full max-w-6xl mx-auto mt-10 rounded-lg overflow-hidden shadow-lg shadow-black/40 border border-red-600 bg-[#0d0d0d]/95 backdrop-blur-sm">
+    <div class="w-full max-w-6xl mx-auto mt-10 rounded-lg overflow-hidden shadow-lg shadow-black/40 border border-[var(--accent)] bg-[#0d0d0d]/95 backdrop-blur-sm">
       
       {/* Barra superior estilo terminal */}
       <TerminalHeader />
 
       {/* Cuerpo principal: historial + prompt */}
-      <TerminalBody terminal={terminal} />
+      <TerminalBody terminal={terminal} lang={lang} />
     </div>
   );
 }

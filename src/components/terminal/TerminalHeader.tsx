@@ -21,10 +21,10 @@ export default function TerminalHeader() {
      * Contenedor visual del header.
      *
      * - bg-black → fondo oscuro estilo terminal
-     * - border-red-600 → coherencia con el tema Red Team
+     * - border-[var(--accent)] → coherencia con el tema Red Team
      * - grid de 3 columnas → distribución perfecta: izquierda / centro / derecha
      */
-    <div class="bg-black border-b border-red-600">
+    <div class="bg-black border-b border-[var(--accent)]">
       <div class="grid grid-cols-3 items-center px-4 py-2">
 
         {/**
@@ -58,7 +58,7 @@ export default function TerminalHeader() {
          *  - Centrado para estética limpia
          */}
         <div class="flex justify-center">
-          <span class="text-[var(--red-accent)] font-mono text-sm">
+          <span class="text-[var(--accent)] font-mono text-sm">
             root@portfolio:~#
           </span>
         </div>
