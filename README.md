@@ -11,7 +11,7 @@
 
 # 📁 **Portfolio Terminal — DONTREBOR1**
 
-Un portfolio interactivo inspirado en una terminal Linux, diseñado para ofrecer una experiencia inmersiva, elegante y profesional. Construido con **Preact + TypeScript + TailwindCSS + Vite**, y con una estética inspirada en entornos **Red Team / Kali Linux**.
+Un portfolio interactivo inspirado en una terminal Linux, diseñado para ofrecer una experiencia inmersiva, elegante y profesional. Construido con **Preact + TypeScript + TailwindCSS + Vite**, con una estética cyberpunk propia (verde + violeta) y soporte bilingüe ES/EN.
 
 ## 🚀 **Demo**
 
@@ -23,7 +23,9 @@ Un portfolio interactivo inspirado en una terminal Linux, diseñado para ofrecer
     
 - **Login animado estilo hacker:** Escribe usuario y contraseña automáticamente antes de entrar al sistema.
     
-- **Efecto Matrix en canvas:** Fondo animado optimizado para rendimiento.
+- **Fondo cyber grid en canvas:** Rejilla + scanline animada, optimizada para rendimiento.
+    
+- **Bilingüe ES/EN:** Selector de idioma persistente, con todo el contenido y la UI traducidos.
     
 - **Diseño responsive completo:** Adaptado a móvil, tablet y desktop con banners ASCII dinámicos.
     
@@ -39,7 +41,7 @@ Un portfolio interactivo inspirado en una terminal Linux, diseñado para ofrecer
 | **TypeScript**        | Tipado estático y robustez               |
 | **TailwindCSS**       | Estilos utilitarios y diseño consistente |
 | **Vite**              | Bundler ultrarrápido                     |
-| **Canvas API**        | Efecto Matrix animado                    |
+| **Canvas API**        | Fondo cyber grid animado                 |
 | **JSON estructurado** | Datos del portfolio                      |
 
 ## 📂 **Estructura del proyecto**
@@ -76,7 +78,7 @@ src/
     
 - **JSON como fuente de datos:** El contenido del portfolio es editable sin tocar código.
     
-- **Canvas independiente:** El efecto Matrix no afecta al rendimiento de la UI.
+- **Canvas independiente:** El fondo animado no afecta al rendimiento de la UI.
     
 - **Documentación exhaustiva:** Cada archivo explica intención, no solo funcionamiento.
 
@@ -84,8 +86,8 @@ src/
 
 - [ ] Añadir sección de PROYECTOS
 - [ ] Añadir descarga de CV
-- [ ] Añadir función para cambiar idioma a Ingles
-- [ ] Añadir función para cambiar estilo Hacker (Verde) / Red Team (Rojo - Actual) / Blue Team (Azul)
+- [x] Añadir función para cambiar idioma a Inglés
+- [x] Cambiar la estética a un tema propio (verde + violeta cyberpunk)
 - [ ] Añadir animación de glitch opcional
 
 ## 👤 **Autor**

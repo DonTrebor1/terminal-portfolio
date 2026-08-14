@@ -5,7 +5,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "eJPT — Junior Penetration Tester",
-        "anio": "Ago 2026", "id": "4fcbd5a8-e177-436d-980d-39d39ecf678d", "url": "",
+        "anio": "Ago 2026", "id": "4fcbd5a8-e177-436d-980d-39d39ecf678d", "url": "https://certs.ine.com/4fcbd5a8-e177-436d-980d-39d39ecf678d#acc.9lhKbs5z",
         "detalles": [
           "Certificación práctica de pentesting junior (INE Security)",
           "Enumeración, explotación y post-explotación en laboratorios reales",
@@ -15,7 +15,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "NIS2 DTP — Cyber Risk GmbH",
-        "anio": "Ago 2026", "id": "", "url": "",
+        "anio": "Ago 2026", "id": "", "url": "https://www.cyber-risk-gmbh.com/Roberto_Bou_Poveda.html",
         "detalles": [
           "Formación sobre la Directiva NIS2 y su cumplimiento normativo",
           "Gestión de riesgos de ciberseguridad a nivel UE"
@@ -24,7 +24,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "Certified ISO/IEC 42001:2023 Lead Auditor — CertiProf",
-        "anio": "Jun 2026", "id": "CLPPRBDQRSF-ZVZZHLQGT-XCWPTTPXWX", "url": "",
+        "anio": "Jun 2026", "id": "CLPPRBDQRSF-ZVZZHLQGT-XCWPTTPXWX", "url": "https://www.credly.com/badges/c1366a27-29fb-4946-9ae5-d6d34bc5cb1e/public_url",
         "detalles": [
           "Auditoría de sistemas de gestión de IA conforme a ISO/IEC 42001:2023",
           "Liderazgo de auditorías de cumplimiento en gobernanza de IA",
@@ -44,7 +44,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "Certified Ethical Hacking Professional Certification (CEHPC) — CertiProf",
-        "anio": "Jun 2026", "id": "FLLLTPJTPDL-RGRRQSQGR-WQTDBNBQNN", "url": "",
+        "anio": "Jun 2026", "id": "FLLLTPJTPDL-RGRRQSQGR-WQTDBNBQNN", "url": "https://www.credly.com/badges/04d8509d-61f9-4687-9c7f-44ad1ec552a3/public_url",
         "detalles": [
           "Hacking ético profesional y metodologías de pentesting",
           "Red Team y técnicas de seguridad ofensiva",
@@ -54,7 +54,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "Certified ISO/IEC 27001:2022 Lead Auditor — CertiProf",
-        "anio": "Jun 2026", "id": "TLZZLHVGZGV-XPXWRTWTW-RLKTTRFJTF", "url": "",
+        "anio": "Jun 2026", "id": "TLZZLHVGZGV-XPXWRTWTW-RLKTTRFJTF", "url": "https://www.credly.com/badges/186e27b1-4d71-466c-ab14-d9175f0beefc/public_url",
         "detalles": [
           "Auditoría de Sistemas de Gestión de Seguridad de la Información (SGSI)",
           "ISO 27001 y cumplimiento de la normativa",
@@ -64,7 +64,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "Certified ISO/IEC 27001:2022 Lead Implementer — CertiProf",
-        "anio": "Jun 2026", "id": "FLLLTQDJCDJ-RGRKHJFGF-WQTDZDNFBF", "url": "",
+        "anio": "Jun 2026", "id": "FLLLTQDJCDJ-RGRKHJFGF-WQTDZDNFBF", "url": "https://www.credly.com/badges/3c2f91d0-c367-43c7-a556-3706f1a4fc08/public_url",
         "detalles": [
           "Implementación de Sistemas de Gestión de Seguridad de la Información (SGSI)",
           "ISO/IEC 27001:2022",
@@ -142,10 +142,30 @@
         ]
       }
     ],
-    "enPreparacion": [],
+    "enPreparacion": [
+      {
+        "icon": "[~]", "color": "yellow",
+        "nombre": "eWPT — Web Application Penetration Tester",
+        "anio": "", "id": "", "url": "",
+        "detalles": [
+          "Certificación práctica de pentesting web (INE/eLearnSecurity)",
+          "Explotación de vulnerabilidades web avanzadas",
+          "Metodología profesional de test de intrusión"
+        ]
+      },
+      {
+        "icon": "[~]", "color": "yellow",
+        "nombre": "CRTP — Certified Red Team Professional",
+        "anio": "", "id": "", "url": "",
+        "detalles": [
+          "Certificación de Red Team enfocada en Active Directory",
+          "Técnicas de post-explotación y movimiento lateral en AD",
+          "Laboratorio práctico de compromiso de dominio"
+        ]
+      }
+    ],
     "objetivos": [
-      { "icon": "[↑]", "color": "red", "nombre": "eWPT — Web Application Penetration Tester" },
-      { "icon": "[↑]", "color": "red", "nombre": "CRTP — Certified Red Team Professional" }
+      { "icon": "[↑]", "color": "red", "nombre": "OSCP — Offensive Security Certified Professional" }
     ]
   },
   "en": {
@@ -154,7 +174,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "eJPT — Junior Penetration Tester",
-        "anio": "Aug 2026", "id": "4fcbd5a8-e177-436d-980d-39d39ecf678d", "url": "",
+        "anio": "Aug 2026", "id": "4fcbd5a8-e177-436d-980d-39d39ecf678d", "url": "https://certs.ine.com/4fcbd5a8-e177-436d-980d-39d39ecf678d#acc.9lhKbs5z",
         "detalles": [
           "Hands-on junior penetration testing certification (INE Security)",
           "Enumeration, exploitation and post-exploitation in real labs",
@@ -164,7 +184,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "NIS2 DTP — Cyber Risk GmbH",
-        "anio": "Aug 2026", "id": "", "url": "",
+        "anio": "Aug 2026", "id": "", "url": "https://www.cyber-risk-gmbh.com/Roberto_Bou_Poveda.html",
         "detalles": [
           "Training on the NIS2 Directive and regulatory compliance",
           "EU-level cybersecurity risk management"
@@ -173,7 +193,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "Certified ISO/IEC 42001:2023 Lead Auditor — CertiProf",
-        "anio": "Jun 2026", "id": "CLPPRBDQRSF-ZVZZHLQGT-XCWPTTPXWX", "url": "",
+        "anio": "Jun 2026", "id": "CLPPRBDQRSF-ZVZZHLQGT-XCWPTTPXWX", "url": "https://www.credly.com/badges/c1366a27-29fb-4946-9ae5-d6d34bc5cb1e/public_url",
         "detalles": [
           "Auditing of AI management systems under ISO/IEC 42001:2023",
           "Leading compliance audits in AI governance",
@@ -193,7 +213,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "Certified Ethical Hacking Professional Certification (CEHPC) — CertiProf",
-        "anio": "Jun 2026", "id": "FLLLTPJTPDL-RGRRQSQGR-WQTDBNBQNN", "url": "",
+        "anio": "Jun 2026", "id": "FLLLTPJTPDL-RGRRQSQGR-WQTDBNBQNN", "url": "https://www.credly.com/badges/04d8509d-61f9-4687-9c7f-44ad1ec552a3/public_url",
         "detalles": [
           "Professional ethical hacking and pentesting methodologies",
           "Red Team and offensive security techniques",
@@ -203,7 +223,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "Certified ISO/IEC 27001:2022 Lead Auditor — CertiProf",
-        "anio": "Jun 2026", "id": "TLZZLHVGZGV-XPXWRTWTW-RLKTTRFJTF", "url": "",
+        "anio": "Jun 2026", "id": "TLZZLHVGZGV-XPXWRTWTW-RLKTTRFJTF", "url": "https://www.credly.com/badges/186e27b1-4d71-466c-ab14-d9175f0beefc/public_url",
         "detalles": [
           "Auditing of Information Security Management Systems (ISMS)",
           "ISO 27001 and regulatory compliance",
@@ -213,7 +233,7 @@
       {
         "icon": "[+]", "color": "green",
         "nombre": "Certified ISO/IEC 27001:2022 Lead Implementer — CertiProf",
-        "anio": "Jun 2026", "id": "FLLLTQDJCDJ-RGRKHJFGF-WQTDZDNFBF", "url": "",
+        "anio": "Jun 2026", "id": "FLLLTQDJCDJ-RGRKHJFGF-WQTDZDNFBF", "url": "https://www.credly.com/badges/3c2f91d0-c367-43c7-a556-3706f1a4fc08/public_url",
         "detalles": [
           "Implementation of Information Security Management Systems (ISMS)",
           "ISO/IEC 27001:2022",
@@ -291,10 +311,30 @@
         ]
       }
     ],
-    "enPreparacion": [],
+    "enPreparacion": [
+      {
+        "icon": "[~]", "color": "yellow",
+        "nombre": "eWPT — Web Application Penetration Tester",
+        "anio": "", "id": "", "url": "",
+        "detalles": [
+          "Hands-on web pentesting certification (INE/eLearnSecurity)",
+          "Exploitation of advanced web vulnerabilities",
+          "Professional penetration testing methodology"
+        ]
+      },
+      {
+        "icon": "[~]", "color": "yellow",
+        "nombre": "CRTP — Certified Red Team Professional",
+        "anio": "", "id": "", "url": "",
+        "detalles": [
+          "Red Team certification focused on Active Directory",
+          "Post-exploitation and lateral movement techniques in AD",
+          "Hands-on domain compromise lab"
+        ]
+      }
+    ],
     "objetivos": [
-      { "icon": "[↑]", "color": "red", "nombre": "eWPT — Web Application Penetration Tester" },
-      { "icon": "[↑]", "color": "red", "nombre": "CRTP — Certified Red Team Professional" }
+      { "icon": "[↑]", "color": "red", "nombre": "OSCP — Offensive Security Certified Professional" }
     ]
   }
 }

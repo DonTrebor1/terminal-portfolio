@@ -5,6 +5,7 @@
       { "icon": "[+]", "color": "green", "label": "Email", "value": "robertbp90@gmail.com" },
       { "icon": "[+]", "color": "green", "label": "LinkedIn", "value": "https://www.linkedin.com/in/robert-bou-poveda-919295248" },
       { "icon": "[+]", "color": "green", "label": "GitHub", "value": "https://github.com/DonTrebor1" },
+      { "icon": "[+]", "color": "green", "label": "Web", "value": "https://thehacksparrow.com" },
       { "icon": "[+]", "color": "green", "label": "Ubicación", "value": "Barcelona, España" }
     ],
     "disponibilidad": [
@@ -18,6 +19,7 @@
       { "icon": "[+]", "color": "green", "label": "Email", "value": "robertbp90@gmail.com" },
       { "icon": "[+]", "color": "green", "label": "LinkedIn", "value": "https://www.linkedin.com/in/robert-bou-poveda-919295248" },
       { "icon": "[+]", "color": "green", "label": "GitHub", "value": "https://github.com/DonTrebor1" },
+      { "icon": "[+]", "color": "green", "label": "Website", "value": "https://thehacksparrow.com" },
       { "icon": "[+]", "color": "green", "label": "Location", "value": "Barcelona, Spain" }
     ],
     "disponibilidad": [

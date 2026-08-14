@@ -34,7 +34,7 @@ export default function TerminalPrompt({
        * ┌──(kali㉿portfolio)-[~] 
        * 
        * Se usan spans con colores para mantener coherencia visual 
-       * con el resto del portfolio (tema Red Team). 
+       * con el resto del portfolio (tema cyberpunk). 
        */}
       <div class="text-[var(--accent)]">
         ┌──(

@@ -51,26 +51,6 @@
       },
       {
         "id": "<span style=\"color:#3399ff\">[03]</span>",
-        "puesto": "Conductor / Transporte de Muestras (Suplencias y Sustituciones)",
-        "inicio": "2022",
-        "fin": "Actualidad",
-        "empresa": "<span style=\"color:#ff3333\">Laboratorios Coll Garcés</span>",
-        "ubicacion": "Barcelona, España",
-        "responsabilidades": [
-          { "icon": "[→]", "color": "orange", "text": "Recogida de muestras en centros y laboratorios siguiendo rutas asignadas" },
-          { "icon": "[→]", "color": "orange", "text": "Entrega de muestras en base garantizando tiempos y trazabilidad del transporte" },
-          { "icon": "[→]", "color": "orange", "text": "Cumplimiento de procedimientos de higiene, seguridad y manipulación durante el traslado" }
-        ],
-        "logros": [
-          { "icon": "[+]", "color": "green", "text": "Alta fiabilidad y puntualidad en rutas críticas, manteniendo calidad del servicio" },
-          { "icon": "[+]", "color": "green", "text": "Trabajo bajo presión y atención al detalle para evitar incidencias en el flujo de transporte" }
-        ],
-        "stackGroups": [
-          { "icon": "[★]", "color": "yellow", "title": "Competencias", "items": ["Responsabilidad", "Puntualidad", "Organización", "Trabajo bajo presión", "Atención al detalle"] }
-        ]
-      },
-      {
-        "id": "<span style=\"color:#3399ff\">[04]</span>",
         "puesto": "Encargado de Almacén",
         "inicio": "2019",
         "fin": "2022",
@@ -90,7 +70,7 @@
         ]
       },
       {
-        "id": "<span style=\"color:#3399ff\">[05]</span>",
+        "id": "<span style=\"color:#3399ff\">[04]</span>",
         "puesto": "Administración y Gerencia de Entidad (AECS)",
         "inicio": "2006",
         "fin": "2019",
@@ -165,26 +145,6 @@
       },
       {
         "id": "<span style=\"color:#3399ff\">[03]</span>",
-        "puesto": "Driver / Sample Transport (Temporary Cover)",
-        "inicio": "2022",
-        "fin": "Present",
-        "empresa": "<span style=\"color:#ff3333\">Laboratorios Coll Garcés</span>",
-        "ubicacion": "Barcelona, Spain",
-        "responsabilidades": [
-          { "icon": "[→]", "color": "orange", "text": "Sample pickup at centers and laboratories following assigned routes" },
-          { "icon": "[→]", "color": "orange", "text": "Sample delivery to base, ensuring transport timing and traceability" },
-          { "icon": "[→]", "color": "orange", "text": "Compliance with hygiene, safety, and handling procedures during transport" }
-        ],
-        "logros": [
-          { "icon": "[+]", "color": "green", "text": "High reliability and punctuality on critical routes, maintaining service quality" },
-          { "icon": "[+]", "color": "green", "text": "Worked under pressure with attention to detail to avoid transport disruptions" }
-        ],
-        "stackGroups": [
-          { "icon": "[★]", "color": "yellow", "title": "Skills", "items": ["Responsibility", "Punctuality", "Organization", "Working under pressure", "Attention to detail"] }
-        ]
-      },
-      {
-        "id": "<span style=\"color:#3399ff\">[04]</span>",
         "puesto": "Warehouse Supervisor",
         "inicio": "2019",
         "fin": "2022",
@@ -204,7 +164,7 @@
         ]
       },
       {
-        "id": "<span style=\"color:#3399ff\">[05]</span>",
+        "id": "<span style=\"color:#3399ff\">[04]</span>",
         "puesto": "Administration & Management (AECS)",
         "inicio": "2006",
         "fin": "2019",

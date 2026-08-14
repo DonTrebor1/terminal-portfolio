@@ -119,7 +119,7 @@ export default function LoginPanel({
        * Replica la estética de una ventana de terminal:
        *  - Botones estilo macOS
        *  - Prompt root@portfolio
-       *  - Bordes rojos para mantener coherencia con el tema Red Team
+       *  - Bordes cian para mantener coherencia con el tema cyberpunk
        */}
       <div class="bg-black border-2 border-[var(--accent)] rounded-t-lg p-3 flex items-center space-x-2 border-top-accent">
         <div class="flex space-x-2">

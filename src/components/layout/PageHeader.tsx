@@ -44,12 +44,12 @@ export default function PageHeader({
   onMenuToggle,
   runCommand,
   lang = "es",
-  onToggleLang,
+  onSetLang,
 }: {
   onMenuToggle: () => void;                 // Abre el menú lateral (solo UI)
   runCommand: (cmd: string) => Promise<void>; // Ejecuta comandos en la terminal
   lang?: "es" | "en";                         // Idioma actual
-  onToggleLang?: () => void;                  // Alterna ES/EN
+  onSetLang?: (lang: "es" | "en") => void;    // Cambia el idioma
 }) {
   const t = LABELS[lang];
   return (
@@ -57,7 +57,7 @@ export default function PageHeader({
      * Header fijo en la parte superior.
      * 
      * - bg-black/80 + backdrop-blur-sm → efecto de cristal oscuro
-     * - border-[var(--accent)] → coherencia con estética Red Team
+     * - border-[var(--accent)] → coherencia con la estética cyberpunk
      * - fixed + z-50 → siempre visible por encima del contenido
      */
     <header class="w-full bg-black/80 border-b border-[var(--accent)] backdrop-blur-sm fixed top-0 left-0 z-50">
@@ -134,14 +134,31 @@ export default function PageHeader({
          *    para mantener consistencia visual y accesibilidad.
          */}
         <div class="flex items-center space-x-4 ml-auto flex-shrink-0">
-          {onToggleLang && (
-            <button
-              class="font-mono text-xs border border-[var(--accent)] text-[var(--accent)] rounded px-2 py-1 hover:bg-[var(--accent)]/20 transition"
-              onClick={onToggleLang}
-              title={lang === "es" ? "Switch to English" : "Cambiar a Español"}
-            >
-              {lang === "es" ? "EN" : "ES"}
-            </button>
+          {onSetLang && (
+            <div class="flex font-mono text-xs border border-[var(--accent)] rounded overflow-hidden">
+              <button
+                class={`px-2 py-1 transition ${
+                  lang === "es"
+                    ? "bg-[var(--accent)] text-black font-bold"
+                    : "text-[var(--accent)] hover:bg-[var(--accent)]/20"
+                }`}
+                onClick={() => onSetLang("es")}
+                aria-pressed={lang === "es"}
+              >
+                ES
+              </button>
+              <button
+                class={`px-2 py-1 transition border-l border-[var(--accent)] ${
+                  lang === "en"
+                    ? "bg-[var(--accent)] text-black font-bold"
+                    : "text-[var(--accent)] hover:bg-[var(--accent)]/20"
+                }`}
+                onClick={() => onSetLang("en")}
+                aria-pressed={lang === "en"}
+              >
+                EN
+              </button>
+            </div>
           )}
           <button class="flex flex-col space-y-1" onClick={onMenuToggle}>
             <span class="block w-6 h-[2px] bg-[var(--accent-soft)]"></span>

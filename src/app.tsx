@@ -18,7 +18,7 @@ import SideMenu from "./components/layout/SideMenu";
 import Footer from "./components/layout/Footer";
 import Terminal from "./components/terminal/Terminal";
 import LoginPanel from "./components/login/LoginPanel";
-import MatrixBackground from "./components/background/MatrixBackground";
+import CyberGridBackground from "./components/background/CyberGridBackground";
 
 // Hook que encapsula toda la lógica de la terminal
 import { useTerminal } from "./core/hooks/useTerminal";
@@ -52,12 +52,9 @@ export function App() {
     return saved === "en" ? "en" : "es";
   });
 
-  function toggleLang() {
-    setLang((prev) => {
-      const next = prev === "es" ? "en" : "es";
-      localStorage.setItem("lang", next);
-      return next;
-    });
+  function changeLang(next: "es" | "en") {
+    setLang(next);
+    localStorage.setItem("lang", next);
   }
 
   /**
@@ -73,8 +70,8 @@ export function App() {
 
   return (
     <div class="relative min-h-screen flex flex-col">
-      {/* Fondo animado estilo Matrix (canvas independiente) */}
-      <MatrixBackground />
+      {/* Fondo animado cyber grid (canvas independiente) */}
+      <CyberGridBackground />
 
       {/* Header visible solo en modo terminal */}
       {stage === "terminal" && (
@@ -82,7 +79,7 @@ export function App() {
           onMenuToggle={() => setMenuOpen(true)}
           runCommand={terminal.runCommand}
           lang={lang}
-          onToggleLang={toggleLang}
+          onSetLang={changeLang}
         />
       )}
 
@@ -95,7 +92,7 @@ export function App() {
           return terminal.runCommand(cmd);
         }}
         lang={lang}
-        onToggleLang={toggleLang}
+        onSetLang={changeLang}
       />
 
       {/* Contenedor principal de contenido */}

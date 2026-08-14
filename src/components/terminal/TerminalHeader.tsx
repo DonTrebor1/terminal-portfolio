@@ -21,7 +21,7 @@ export default function TerminalHeader() {
      * Contenedor visual del header.
      *
      * - bg-black → fondo oscuro estilo terminal
-     * - border-[var(--accent)] → coherencia con el tema Red Team
+     * - border-[var(--accent)] → coherencia con el tema cyberpunk
      * - grid de 3 columnas → distribución perfecta: izquierda / centro / derecha
      */
     <div class="bg-black border-b border-[var(--accent)]">

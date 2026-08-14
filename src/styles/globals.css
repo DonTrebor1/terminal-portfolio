@@ -6,13 +6,14 @@
  * y facilitar cambios de tema en el futuro.
  *
  * Decisiones de diseño:
- *  - Colores inspirados en estética hacker / terminal Matrix
+ *  - Estética cyberpunk (verde + violeta) en lugar del verde/rojo
+ *    "hacker terminal" genérico, para una identidad propia
  *  - Tonos suaves para evitar saturación visual
  *  - Nombres semánticos para facilitar mantenimiento
  */
 :root {
-  --accent: #00e676; /* Verde elegante, profesional */
-  --accent-soft: #39ff14; /* Verde brillante para detalles */
+  --accent: #00e676; /* Verde eléctrico, estructura y bordes */
+  --accent-soft: #b026ff; /* Violeta brillante para detalles y highlights */
   --black-carbon: #0d0d0d; /* Negro carbón */
   --gray-terminal: #cfcfcf; /* Gris terminal */
   --white-soft: #f2f2f2; /* Blanco suave */
@@ -32,11 +33,11 @@
 /**
  * Efecto glow verde para elementos interactivos.
  *
- * Se usa en botones clave para reforzar la estética hacker.
+ * Se usa en botones clave para reforzar la estética cyberpunk.
  * El glow es suave para evitar ruido visual.
  */
 .glow-accent:hover {
-  box-shadow: 0 0 12px rgba(0, 230, 118, 0.45);
+  box-shadow: 0 0 12px rgba(0, 230, 118, 0.5);
 }
 
 /**
@@ -60,7 +61,7 @@
 }
 
 /**
- * Scrollbar personalizado estilo hacker.
+ * Scrollbar personalizado estilo cyberpunk.
  *
  * Decisiones de diseño:
  *  - Scroll rectangular (sin bordes redondeados) para estética CLI
@@ -80,12 +81,12 @@
 
 .terminal-scroll::-webkit-scrollbar-thumb {
   background: #005c22; /* verde oscuro */
-  border: 1px solid #00ff00; /* borde verde brillante */
+  border: 1px solid #00e676; /* borde verde brillante */
   border-radius: 0; /* rectangular */
 }
 
 .terminal-scroll::-webkit-scrollbar-thumb:hover {
-  background: #00ff00; /* verde más brillante al pasar el ratón */
+  background: #00e676; /* verde más brillante al pasar el ratón */
 }
 
 /**

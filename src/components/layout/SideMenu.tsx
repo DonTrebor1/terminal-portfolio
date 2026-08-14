@@ -55,13 +55,13 @@ export default function SideMenu({
   onClose,
   runCommand,
   lang = "es",
-  onToggleLang,
+  onSetLang,
 }: {
   open: boolean;                           // Controla si el menú está visible
   onClose: () => void;                     // Cierra el menú (solo UI)
   runCommand: (cmd: string) => Promise<void>; // Ejecuta comandos en la terminal
   lang?: "es" | "en";                        // Idioma actual
-  onToggleLang?: () => void;                 // Alterna ES/EN
+  onSetLang?: (lang: "es" | "en") => void;   // Cambia el idioma
 }) {
   const t = LABELS[lang];
   return (
@@ -90,7 +90,7 @@ export default function SideMenu({
        *
        * - Posicionado a la derecha
        * - Se desplaza con transform: translate-x-full → translate-x-0
-       * - Mantiene estética Red Team con bordes rojos y fondo oscuro
+       * - Mantiene estética cyberpunk con bordes cian y fondo oscuro
        *
        * Decisión de diseño:
        *  - Se usa transform en lugar de left/right para animaciones más fluidas
@@ -223,13 +223,34 @@ export default function SideMenu({
           <div class="space-y-2">
             <p class="text-sm text-[var(--gray-terminal)]">{t.masOpciones}</p>
 
-            {onToggleLang && (
-              <button
-                class="w-full text-left px-3 py-2 bg-black border border-[var(--accent)] text-[var(--accent)] rounded hover:bg-[var(--accent)]/20 transition"
-                onClick={onToggleLang}
-              >
-                {t.idioma}: {lang === "es" ? "Español → English" : "English → Español"}
-              </button>
+            {onSetLang && (
+              <div>
+                <p class="text-xs text-[var(--gray-terminal)] mb-1">{t.idioma}</p>
+                <div class="flex font-mono text-sm border border-[var(--accent)] rounded overflow-hidden">
+                  <button
+                    class={`flex-1 py-2 transition ${
+                      lang === "es"
+                        ? "bg-[var(--accent)] text-black font-bold"
+                        : "text-[var(--accent)] hover:bg-[var(--accent)]/20"
+                    }`}
+                    onClick={() => onSetLang("es")}
+                    aria-pressed={lang === "es"}
+                  >
+                    ES
+                  </button>
+                  <button
+                    class={`flex-1 py-2 transition border-l border-[var(--accent)] ${
+                      lang === "en"
+                        ? "bg-[var(--accent)] text-black font-bold"
+                        : "text-[var(--accent)] hover:bg-[var(--accent)]/20"
+                    }`}
+                    onClick={() => onSetLang("en")}
+                    aria-pressed={lang === "en"}
+                  >
+                    EN
+                  </button>
+                </div>
+              </div>
             )}
           </div>
         </div>

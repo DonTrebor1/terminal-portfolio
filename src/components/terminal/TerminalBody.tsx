@@ -71,7 +71,9 @@ export default function TerminalBody({
            *  - Se respeta el formato exacto
            *  - Se usa <pre> para mantener saltos y espacios
            */
-          <pre class="whitespace-pre mb-2">{item.content}</pre>
+          <pre class="whitespace-pre mb-2 font-pixel text-base leading-tight tracking-wide">
+            {item.content}
+          </pre>
         ) : (
           /**
            * HTML:

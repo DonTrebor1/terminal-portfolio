@@ -1,18 +1,12 @@
 {
   "es": {
-    "name": "<span style=\"color:#0fff00\">Robert Bou Poveda</span>",
-    "role": "<span style=\"color:#00e676\">Analista de Ciberseguridad en formación</span>",
-    "description": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua.",
-    "text": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua.",
-    "about": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua.",
-    "info": "Profesional en transición hacia la ciberseguridad con base sólida en tecnología, sistemas y resolución de problemas. Enfocado en aprendizaje práctico en laboratorios, redes y análisis de vulnerabilidades, con interés en pentesting y mejora continua."
+    "name": "<span style=\"color:#b026ff\">Robert Bou Poveda</span>",
+    "role": "<span style=\"color:#00e676\">Analista de Ciberseguridad</span>",
+    "text": "Analista de Ciberseguridad con Máster en Ciberseguridad e IA y certificaciones profesionales como eJPT, CEHPC y Lead Auditor/Implementer en ISO 27001 e ISO 42001. Combino una base académica sólida con práctica constante en laboratorios de pentesting, análisis de vulnerabilidades y cumplimiento normativo, con el foco puesto en la seguridad ofensiva."
   },
   "en": {
-    "name": "<span style=\"color:#0fff00\">Robert Bou Poveda</span>",
-    "role": "<span style=\"color:#00e676\">Cybersecurity Analyst in training</span>",
-    "description": "Professional transitioning into cybersecurity with a solid background in technology, systems, and problem-solving. Focused on hands-on learning in labs, networking, and vulnerability analysis, with an interest in pentesting and continuous improvement.",
-    "text": "Professional transitioning into cybersecurity with a solid background in technology, systems, and problem-solving. Focused on hands-on learning in labs, networking, and vulnerability analysis, with an interest in pentesting and continuous improvement.",
-    "about": "Professional transitioning into cybersecurity with a solid background in technology, systems, and problem-solving. Focused on hands-on learning in labs, networking, and vulnerability analysis, with an interest in pentesting and continuous improvement.",
-    "info": "Professional transitioning into cybersecurity with a solid background in technology, systems, and problem-solving. Focused on hands-on learning in labs, networking, and vulnerability analysis, with an interest in pentesting and continuous improvement."
+    "name": "<span style=\"color:#b026ff\">Robert Bou Poveda</span>",
+    "role": "<span style=\"color:#00e676\">Cybersecurity Analyst</span>",
+    "text": "Cybersecurity Analyst with a Master's in Cybersecurity & AI and professional certifications including eJPT, CEHPC, and ISO 27001 / ISO 42001 Lead Auditor & Lead Implementer. I combine a solid academic background with constant hands-on practice in pentesting labs, vulnerability analysis, and regulatory compliance, with a focus on offensive security."
   }
 }

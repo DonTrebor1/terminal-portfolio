@@ -4,7 +4,7 @@
  * Este componente cumple una función estética y contextual:
  *  - Cierra visualmente la página
  *  - Refuerza la identidad profesional del autor
- *  - Mantiene coherencia con el tema Red Team (bordes rojos, fondo oscuro)
+ *  - Mantiene coherencia con el tema cyberpunk (bordes cian, fondo oscuro)
  *
  * Responsabilidad:
  *  - Es puramente visual

@@ -1,34 +1,34 @@
 {
   "es": {
     "title": "<span style=\"color:#fffd00\">Perfil Profesional</span>",
-    "description": "<span style=\"color:#00e676\">Analista de Ciberseguridad en formación</span> con base técnica en sistemas, redes y desarrollo. Orientado al aprendizaje práctico en laboratorios, análisis de vulnerabilidades y mejora continua, con especial interés en <span style=\"color:#fffd00\">Red Team</span> y defensa de infraestructuras.",
+    "description": "<span style=\"color:#00e676\">Analista de Ciberseguridad</span> con Máster en Ciberseguridad e IA y certificaciones profesionales en pentesting (eJPT, CEHPC) y cumplimiento normativo (Lead Auditor/Implementer ISO 27001 e ISO 42001). Combino formación académica sólida con práctica constante en laboratorios de seguridad ofensiva, con especial interés en <span style=\"color:#fffd00\">Red Team</span> y defensa de infraestructuras.",
     "specialization": [
-      { "icon": "[+]", "color": "green", "text": "Fundamentos de Redes" },
-      { "icon": "[+]", "color": "green", "text": "Análisis de Vulnerabilidades" },
-      { "icon": "[+]", "color": "green", "text": "Laboratorios de Pentesting" },
-      { "icon": "[+]", "color": "green", "text": "Scripting básico y automatización" },
-      { "icon": "[+]", "color": "green", "text": "Bases de Programación" }
+      { "icon": "[+]", "color": "green", "text": "Penetration Testing (Web, Redes, Sistemas)" },
+      { "icon": "[+]", "color": "green", "text": "Auditoría y Cumplimiento (ISO 27001, ISO 42001, NIS2)" },
+      { "icon": "[+]", "color": "green", "text": "Red Team y Post-Explotación" },
+      { "icon": "[+]", "color": "green", "text": "Análisis de Vulnerabilidades y Hardening" },
+      { "icon": "[+]", "color": "green", "text": "Scripting y Automatización de Seguridad" }
     ],
     "goals": [
-      { "icon": "[→]", "color": "orange", "text": "Continuar mi carrera profesional en ciberseguridad" },
-      { "icon": "[→]", "color": "orange", "text": "Especializarme en Pentesting y seguridad ofensiva" },
-      { "icon": "[→]", "color": "orange", "text": "Seguir aprendiendo y evolucionando constantemente" }
+      { "icon": "[→]", "color": "orange", "text": "Consolidarme profesionalmente en ciberseguridad ofensiva" },
+      { "icon": "[→]", "color": "orange", "text": "Profundizar en Red Team y técnicas avanzadas de post-explotación" },
+      { "icon": "[→]", "color": "orange", "text": "Obtener certificaciones de referencia como OSCP y eWPT" }
     ]
   },
   "en": {
     "title": "<span style=\"color:#fffd00\">Professional Profile</span>",
-    "description": "<span style=\"color:#00e676\">Cybersecurity Analyst in training</span> with a technical background in systems, networking, and development. Focused on hands-on lab learning, vulnerability analysis, and continuous improvement, with a particular interest in <span style=\"color:#fffd00\">Red Team</span> and infrastructure defense.",
+    "description": "<span style=\"color:#00e676\">Cybersecurity Analyst</span> with a Master's in Cybersecurity & AI and professional certifications in penetration testing (eJPT, CEHPC) and regulatory compliance (ISO 27001 & ISO 42001 Lead Auditor/Implementer). I combine a solid academic background with constant hands-on practice in offensive security labs, with a particular interest in <span style=\"color:#fffd00\">Red Team</span> and infrastructure defense.",
     "specialization": [
-      { "icon": "[+]", "color": "green", "text": "Networking Fundamentals" },
-      { "icon": "[+]", "color": "green", "text": "Vulnerability Analysis" },
-      { "icon": "[+]", "color": "green", "text": "Pentesting Labs" },
-      { "icon": "[+]", "color": "green", "text": "Basic scripting and automation" },
-      { "icon": "[+]", "color": "green", "text": "Programming fundamentals" }
+      { "icon": "[+]", "color": "green", "text": "Penetration Testing (Web, Network, Systems)" },
+      { "icon": "[+]", "color": "green", "text": "Audit & Compliance (ISO 27001, ISO 42001, NIS2)" },
+      { "icon": "[+]", "color": "green", "text": "Red Team & Post-Exploitation" },
+      { "icon": "[+]", "color": "green", "text": "Vulnerability Analysis & Hardening" },
+      { "icon": "[+]", "color": "green", "text": "Security Scripting & Automation" }
     ],
     "goals": [
-      { "icon": "[→]", "color": "orange", "text": "Continue my professional career in cybersecurity" },
-      { "icon": "[→]", "color": "orange", "text": "Specialize in Pentesting and offensive security" },
-      { "icon": "[→]", "color": "orange", "text": "Keep learning and evolving constantly" }
+      { "icon": "[→]", "color": "orange", "text": "Build a solid professional career in offensive security" },
+      { "icon": "[→]", "color": "orange", "text": "Deepen expertise in Red Team and advanced post-exploitation techniques" },
+      { "icon": "[→]", "color": "orange", "text": "Earn benchmark certifications such as OSCP and eWPT" }
     ]
   }
 }
